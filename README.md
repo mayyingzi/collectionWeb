@@ -1,4 +1,8 @@
 ## collection everyday
+- 本地址配置一个http文件服务器
+
+		anywhere
+		http-server
 - [e6箭头函数使用说明](https://segmentfault.com/a/1190000010946164)
  
 - 书单
