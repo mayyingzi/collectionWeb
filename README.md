@@ -1,4 +1,19 @@
 ## collection everyday
+- fiddler使用
+	- [pc windows开启https抓包，提示证书安装失败，解决方案](http://blog.csdn.net/qq_31666147/article/details/51488063)
+		1. 删除IE内容里的证书
+		2. 删除：C:\Users\<UserName>\AppData\Roaming\Microsoft\Crypto\RSA\  （**这个路径下的文件就行了。不过我建议大家先备份里面的文件，否则出了问题，则无法恢复**）
+		3. 执行命令（cd 到fiddler安装目录）：cd d:\Program Files\Fiddler
+		
+				makecert.exe -r -ss my -n "CN=DO_NOT_TRUST_FiddlerRoot, O=DO_NOT_TRUST, OU=Created by http://www.fiddler2.com" -sky signature -eku 1.3.6.1.5.5.7.3.1 -h 1 -cy authority -a sha1 -m 120 -b 09/05/2012
+
+	- [配置手机抓包https教程](http://blog.csdn.net/songer_xing/article/details/53841401)
+		- ios出现https抓包tunnel to ，或者抓包失败处理
+			- iOS 10.3升级之后，安装的证书默认是不启用的，需要手动去开启。
+
+					设置 –> 通用 –> 关于本机 –> 证书信息设置; 将Fiddler的证书开关打开就行了
+		
+
 - 本地址配置一个http文件服务器
 
 		anywhere
