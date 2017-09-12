@@ -1,4 +1,8 @@
 ## collection everyday
+- 2017 前端面试知识点整理
+	- [整理的面挺全的：https://segmentfault.com/a/1190000011091907](https://segmentfault.com/a/1190000011091907)
+	- [知识点探讨 https://github.com/xufei/blog/issues](https://github.com/xufei/blog/issues)
+	- [前端资料群集 https://github.com/nicejade/Front-end-tutorial](https://github.com/nicejade/Front-end-tutorial)  
 - fiddler使用
 	- [pc windows开启https抓包，提示证书安装失败，解决方案](http://blog.csdn.net/qq_31666147/article/details/51488063)
 		1. 删除IE内容里的证书
@@ -12,7 +16,9 @@
 			- iOS 10.3升级之后，安装的证书默认是不启用的，需要手动去开启。
 
 					设置 –> 通用 –> 关于本机 –> 证书信息设置; 将Fiddler的证书开关打开就行了
-		
+	- 其他优秀教程推荐
+		- http://blog.csdn.net/htdeyanlei/article/details/52874248
+	
 
 - 本地址配置一个http文件服务器
 
@@ -48,7 +54,7 @@
 		http://www.html5cn.org/article-9285-1.html   开启网页调试教程   （微信调试工具）
 
 
-3、node.js学习（http://www.runoob.com/nodejs/nodejs-repl.html 12:23 2016/4/12  **************）
+3、node.js学习（http://www.runoob.com/nodejs/nodejs-repl.html）
 
 	常用指令:
 
@@ -344,277 +350,139 @@ expressJs学习（基于node） http://www.th7.cn/web/js/201404/29836.shtml
 
 	
 
-<<<<<<<<
+- MV*框架
+	- [http://bingojs2.mydoc.io/   bingoJS API官网](http://bingojs2.mydoc.io/)
 
->>>>>>>>
-	http://bingojs2.mydoc.io/   bingoJS API官网 （MV*框架）
+- web端的自适应  rem css pixel与device pixels （device-width viewport DevicePixelRadio）
+	- [http://www.cnblogs.com/koukouyifan/p/4066567.html](http://www.cnblogs.com/koukouyifan/p/4066567.html)
+	- [http://web.jobbole.com/87267/](http://web.jobbole.com/87267/)	
 
-<<<<<<<<
+- [百度地图API http://lbsyun.baidu.com/index.php?title=webcomponent](http://lbsyun.baidu.com/index.php?title=webcomponent)
 
->>>>>>>
-	web端的自适应  rem css pixel与device pixels （device-width viewport DevicePixelRadio）
-	http://www.cnblogs.com/koukouyifan/p/4066567.html
-	http://web.jobbole.com/87267/
+- [node之ueditor编辑器 http://www.cnblogs.com/Chen-xy/p/4466425.html  ](http://www.cnblogs.com/Chen-xy/p/4466425.html)
 
-<<<<<<<<
-
->>>>>>>
-
-	http://lbsyun.baidu.com/index.php?title=webcomponent  百度地图API
-
-<<<<<<<<
-
-
->>>>>>>
-
-	http://www.cnblogs.com/Chen-xy/p/4466425.html   node之ueditor编辑器
-
-
-<<<<<<<
-
->>>>>>>
-
-http://www.codingserf.com/index.php/2015/05/javascript-design-patterns-singleton/
-http://www.codingserf.com/
-JavaScript设计模式系列的更多文章：
-– 单例模式（Singleton Pattern）
-– 桥接模式（Bridge Pattern）
-– 组合模式（Composite Pattern）
-– 外观模式（Facade Pattern）
-– 适配器模式（Adapter Pattern）
-– 装饰者模式（Decorator Pattern）
-– 工厂模式（一）（Factory Pattern Part 1）
-– 工厂模式（二）（Factory Pattern Part 2）
-– 代理模式（Proxy Pattern）
-– 观察者模式（Observer Pattern）
-– 命令模式（Command Pattern）
-– 责任链模式（Chain of Responsibility Pattern）
-
-<<<<<<<
-
-
-
-1、模板→ svn → 运营 （添加）
-
-2、 detail 数据反映到model中去。
-
-
->>>>>>
-
-	https://github.com/xufei/blog/issues
-	https://github.com/xufei/blog/issues/35
-	https://github.com/xufei/blog/issues/33
-<<<<<<
-
-
->>>>>>>>>
-
-	https://github.com/nicejade/Front-end-tutorial  前端资料群集
-<<<<<<<<
-
-
-
->>>>>>>>>
-
-	模拟器（电脑）
-	1.安卓 ：夜神模拟器，BlueStacks
-
-	2.苹果： iPadian
-<<<<<<<<
-
-
->>>>>>>>>
-
-	图表插件库
-	1、http://echarts.baidu.com/   echarts
-
-	2、https://g2.alipay.com/start/		G2
-
-	3、http://www.highcharts.com/		highcharts
-<<<<<<<<
-
-
->>>>>>>>>
-	集成测试相关文章
-	1、http://taobaofed.org/blog/2015/12/10/frontend-test-platform/
+- [JavaScript设计模式系列的文章：](http://www.codingserf.com/)
+	- [JavaScript设计模式：单例模式](http://www.codingserf.com/index.php/2015/05/javascript-design-patterns-singleton/)
 	
-	Nightwatch  WEB UI测试 http://nightwatchjs.org/
-	http://stackoverflow.com/questions/tagged/nightwatch.js
-	https://github.com/nightwatchjs/nightwatch
+	- 单例模式（Singleton Pattern）
+	- 桥接模式（Bridge Pattern）
+	- 组合模式（Composite Pattern）
+	- 外观模式（Facade Pattern）
+	- 适配器模式（Adapter Pattern）
+	- 装饰者模式（Decorator Pattern）
+	- 工厂模式（一）（Factory Pattern Part 1）
+	- 工厂模式（二）（Factory Pattern Part 2）
+	- 代理模式（Proxy Pattern）
+	- 观察者模式（Observer Pattern）
+	- 命令模式（Command Pattern）
+	- 责任链模式（Chain of Responsibility Pattern）
+- 模拟器（电脑）
+	- 安卓 ：夜神模拟器，BlueStacks
+	- 苹果： iPadian
 
-	Karma
-
-	2、nightwatch
-
-	3、phantom
-
-<<<<<<<<
 
 
+- 图表插件库
+	- http://echarts.baidu.com/   echarts
+
+	- https://g2.alipay.com/start/		G2
+
+	- http://www.highcharts.com/		highcharts
 
 
-
->>>>>>>
-	翻墙 
-	1、lantern （蓝灯）
+- 集成测试相关文章
 	
-	lantern下载
-	http://www.bcoder.cn/?s=%E8%93%9D%E7%81%AF
+	- http://taobaofed.org/blog/2015/12/10/frontend-test-platform/	
+	- Nightwatch  WEB UI测试 http://nightwatchjs.org/
+		- http://stackoverflow.com/questions/tagged/nightwatch.js
+		- https://github.com/nightwatchjs/nightwatch
+	- Karma
+	- phantom
+- 翻墙 
+	- lantern （蓝灯）
+		- lantern下载
+			- http://www.bcoder.cn/?s=%E8%93%9D%E7%81%AF
 
+	- 申请试用一天
+		- http://www.92tao.com/
+	- UltraSurf Security, Privacy & Unblock VPN
+	- Shadowsocks
+ 	- 谷歌翻墙插件
 
-	2、申请试用一天
-	http://www.92tao.com/ 
-
-	3、UltraSurf Security, Privacy & Unblock VPN
-
- 	谷歌翻墙插件
-
-<<<<<<
-
-
->>>>>>>>
-	教程 测试
-	http://teahour.fm/2015/08/16/vuejs-creator-evan-you.html
+- 教程 测试
+	- http://teahour.fm/2015/08/16/vuejs-creator-evan-you.html
 	
-	云测试
-	https://saucelabs.com/
-	http://www.cnblogs.com/sparkling-ly/p/5653402.html (教程)
+	- 云测试
+		- https://saucelabs.com/
+		- http://www.cnblogs.com/sparkling-ly/p/5653402.html (教程)
 
-	// 阿里前端测试 （主要针对页面死链接、浏览器截图。。。。没有多大的实用性）
-	http://fts.aliyun.com/index.htm?spm=0.0.0.0.8SeQ8F
+	- 阿里前端测试 （主要针对页面死链接、浏览器截图。。。。没有多大的实用性）
+		- http://fts.aliyun.com/index.htm?spm=0.0.0.0.8SeQ8F
 	
-<<<<<<<<
+- app chrome 调试
+	- 模拟器(BlueStacks、夜神、海马)+真实手机
+- 插件编写 chrome	
+	- https://segmentfault.com/a/1190000006949838
 
-
-
->>>>>
-
-	app chrome 调试
-
-	模拟器(BlueStacks)+真实手机
-
-<<<<<<<<
-
->>>>>>>>
-
-	插件编写 chrome
-	https://segmentfault.com/a/1190000006949838
-
-<<<<<<<
-
->>>>>>>
-	前端学习方向
-	http://www.w3school.com.cn/js/pro_js_object_defining.asp
-	http://www.cnblogs.com/sanshi/archive/2009/07/08/1519036.html
-	http://www.cnblogs.com/TomXu/tag/JavaScript/
-	《JavaScript面向对象编程指南（第2版）》
-	《JavaScript设计模式与开发实践》
-	https://www.zhihu.com/question/22146521
-
-	// 常用页面效果demo
+- 前端学习方向	
+	- http://www.w3school.com.cn/js/pro_js_object_defining.asp
+	- http://www.cnblogs.com/sanshi/archive/2009/07/08/1519036.html
+	- http://www.cnblogs.com/TomXu/tag/JavaScript/
+	- 《JavaScript面向对象编程指南（第2版）》
+	- 《JavaScript设计模式与开发实践》
+	- https://www.zhihu.com/question/22146521
+- 常用页面效果demo
 	http://web.jobbole.com/88005/
-
-<<<<<<<
-
-
->>>>>>>
+- git辅助工具:souceTree
 	https://www.sourcetreeapp.com/
-	git辅助工具:souceTree
-<<<<<<<
-
->>>>>
-各种学习视频
-https://www.youtube.com/user/thenewboston/playlists
-
-
->>>>>>
-	iconfont文字icon
-http://lib.h-ui.net/Hui-iconfont/1.0.7/demo.html
-http://fontawesome.dashgame.com/
-
-<<<<<<<
-
-
->>>>>>>
-	可视化编辑
-	http://egret.com/products/wing.html
-<<<<<<
-
-
->>>>>>>
-	银联开发学习
-	http://www.cnblogs.com/abcwt112/p/4768390.html
-	银联商家技术服务官网
-	https://open.unionpay.com/ajweb/help/apiTool?cateid=38
-
-	支付宝支付商户
-	https://mobiless.alipay.com/
-<<<<<<<
-
->>>>>>>
-	常用正则：http://jingyan.baidu.com/article/624e74599410d634e8ba5a0a.html
-
-<<<<<<<
-
->>>>>>>
-	一些不错的UI成套组件库
-	1、sui 就是css的写法有些老  http://m.sui.taobao.org/
-	2、weiui 一套贴合微信开发的UI组件    https://mp.weixin.qq.com/wiki/2/ae9782fb42e47ad79eb7b361c2149d16.html
-
-<<<<<<<
-
-
->>>>>>
-	web中的url中的http协议与https，相对协议地址
-	https://segmentfault.com/q/1010000000368868
-<<<<<
-
->>>>>
-	webpack学习地址
-	https://github.com/slashhuang/blog/issues/1
-
-	https://www.zhihu.com/question/39290543
-<<<<<
-
-
->>>>>>
-
-	fiddler 设置https抓包的方法（管用！！！！）
-	http://blog.csdn.net/htdeyanlei/article/details/52874248
-
-<<<<<<
-
->>>>>>
-	css写各种常用的icon
-	http://cssicon.space/#/icon/snow
-
-<<<<<<
-
->>>>>>
-	原生与h5的交互
-	http://blog.csdn.net/ggh990640782/article/details/44598097
-<<<<<<
-
-
->>>>>
-	前端资料新手手册
-	http://f2er.club/
-
-<<<<<<
-
-
->>>>>>
-	微信小程序
-	http://www.wxappclub.com/   微信小程序俱乐部
 	
-	https://mp.weixin.qq.com/debug/wxadoc/dev/index.html 小程序文档
+- 各种学习视频
+	- [https://www.youtube.com/user/thenewboston/playlists](https://www.youtube.com/user/thenewboston/playlists)
 
-	https://mp.weixin.qq.com/wiki 微信公众平台 · 小程序文档
 
-	https://minapp.com/miniapp/  小程序应用商店
+- iconfont文字icon	
+	- http://lib.h-ui.net/Hui-iconfont/1.0.7/demo.html
+	- http://fontawesome.dashgame.com/
 
-	https://github.com/shuncaigao/BS 小例子
-<<<<<<
+- 可视化编辑
+	- http://egret.com/products/wing.html
+	
+- 银联开发学习
+	- [http://www.cnblogs.com/abcwt112/p/4768390.html](http://www.cnblogs.com/abcwt112/p/4768390.html)	
+	- 银联商家技术服务官网
+		- https://open.unionpay.com/ajweb/help/apiTool?cateid=38
+- 支付宝支付开发
+	- https://mobiless.alipay.com/
+- 正则学习
+	- [常用正则：http://jingyan.baidu.com/article/624e74599410d634e8ba5a0a.html](http://jingyan.baidu.com/article/624e74599410d634e8ba5a0a.html)
+	- [正则图形化解析工具 https://regexper.com/](https://regexper.com/)
+- 一些不错的UI成套组件库	
+	- [sui 就是css的写法有些老  http://m.sui.taobao.org/](http://m.sui.taobao.org/)
+	- [weiui 一套贴合微信开发的UI组件    https://mp.weixin.qq.com/wiki/2/ae9782fb42e47ad79eb7b361c2149d16.html](https://mp.weixin.qq.com/wiki/2/ae9782fb42e47ad79eb7b361c2149d16.html)
+
+- [web中的url中的http协议与https，相对协议地址](https://segmentfault.com/q/1010000000368868)
+	
+- webpack学习地址	
+	- https://github.com/slashhuang/blog/issues/1
+	- https://www.zhihu.com/question/39290543
+
+
+- css写各种常用的icon（强烈推荐）	
+	- [http://cssicon.space/#/icon/snow](http://cssicon.space/#/icon/snow)
+
+- 原生与h5的交互	
+	- http://blog.csdn.net/ggh990640782/article/details/44598097
+
+
+- 前端资料新手手册	
+	- [http://f2er.club/](http://f2er.club/)
+- 微信小程序	
+	- [http://www.wxappclub.com/   微信小程序俱乐部](http://www.wxappclub.com/)
+	
+	- [https://mp.weixin.qq.com/debug/wxadoc/dev/index.html 小程序文档](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+	- [https://mp.weixin.qq.com/wiki 微信公众平台 · 小程序文档](https://mp.weixin.qq.com/wiki)
+	- [https://minapp.com/miniapp/  小程序应用商店](https://minapp.com/miniapp/)
+	- [https://github.com/shuncaigao/BS 小例子](https://github.com/shuncaigao/BS)
 
 >>>>>>
 	千库网，一个免费下载图片素材的网站
