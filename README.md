@@ -1,6 +1,7 @@
 ## collection everyday
 - 2017 前端面试知识点整理
 	- [整理的面挺全的：https://segmentfault.com/a/1190000011091907](https://segmentfault.com/a/1190000011091907)
+	- [深入理解 js this 绑定 https://segmentfault.com/a/1190000011194676](https://segmentfault.com/a/1190000011194676)
 	- [知识点探讨 https://github.com/xufei/blog/issues](https://github.com/xufei/blog/issues)
 	- [前端资料群集 https://github.com/nicejade/Front-end-tutorial](https://github.com/nicejade/Front-end-tutorial)  
 - fiddler使用
