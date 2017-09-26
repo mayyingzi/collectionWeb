@@ -1,6 +1,8 @@
 ## collection everyday
 - 2017 前端面试知识点整理
 	- [整理的面挺全的：https://segmentfault.com/a/1190000011091907](https://segmentfault.com/a/1190000011091907)
+	- [腾讯校招面试题 https://juejin.im/post/59c907d46fb9a00a4746e2db](https://juejin.im/post/59c907d46fb9a00a4746e2db)
+	- [es6 面试题 https://juejin.im/post/59c8aec0f265da065c5e965e](https://juejin.im/post/59c8aec0f265da065c5e965e)
 	- [深入理解 js this 绑定 https://segmentfault.com/a/1190000011194676](https://segmentfault.com/a/1190000011194676)
 	- [知识点探讨 https://github.com/xufei/blog/issues](https://github.com/xufei/blog/issues)
 	- [前端资料群集 https://github.com/nicejade/Front-end-tutorial](https://github.com/nicejade/Front-end-tutorial)  
@@ -26,7 +28,9 @@
 		anywhere
 		http-server
 - [e6箭头函数使用说明](https://segmentfault.com/a/1190000010946164)
- 
+- 小程序案例
+	- [云档 https://github.com/SmallRuralDog/cloud-doc](https://github.com/SmallRuralDog/cloud-doc)
+
 - 书单
 
 		/**书单 （s 11:14 2016/4/21）**/
