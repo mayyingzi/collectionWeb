@@ -15,7 +15,54 @@
 - 正则学习
 	- [常用正则：http://jingyan.baidu.com/article/624e74599410d634e8ba5a0a.html](http://jingyan.baidu.com/article/624e74599410d634e8ba5a0a.html)
 	- [正则图形化解析工具 https://regexper.com/](https://regexper.com/)
-	- [正则学习小书，**推荐** https://juejin.im/post/5965943ff265da6c30653879](https://juejin.im/post/5965943ff265da6c30653879) 
+	- [正则学习小书，**推荐** https://juejin.im/post/5965943ff265da6c30653879](https://juejin.im/post/5965943ff265da6c30653879)
+- 前端开发常用工具整理
+	- 测试辅助工具
+		- 原生嵌入h5
+			- 模拟器
+				- 安卓： 夜神模拟器  海马玩模拟器  BlueStacks 
+				- ios：iPadian（感觉不好用）
+			- 抓包，代理
+				- fiddler
+				- wireshark
+	- 开发文档编辑
+		- MarkdownPad： 各种说明文档&开发文档整理编写（可以导出html）
+	- 产品原型图使用工具
+		- AxureRP
+	- UI常用工具
+		- ps
+		- MarkMan：开速标注
+		- FastStone Capture（红绿工具）		
+ 	- 视频录制（每帧可编辑）
+ 		- ScreenToGif
+	- 翻墙工具
+		- Shadowsocks
+		- Lantern
+		- Proxifier
+	- chrome常用插件
+		- ADB： 调试安卓
+		- Allow-Control-Allow-Origin： 跨域处理
+		- Axure RP Extension for Chrome：原型图预览
+		- Google翻译
+		- JSON-handle： json格式 beautiful view
+		- Vue.js devtools： vue 开发debug
+		- 草料二维码： 当前网址二维码
+		- Web Server for Chrome： 辅助 service workers
+	- 常用开发编辑器
+		- vscode: 各种扩展，推荐使用
+			- vscde常用插件
+				- 正对代码检查的，ts，js
+				- 自动保存，autofix功能开启
+				- 快速搜索node_modules： Search node_modules
+				- 丰富界面icon
+				- git辅助，等配置
+				- debug
+				- 开发文档编辑
+					- md
+		- WebStorm
+			- 常用插件
+		- sublime
+
 - fiddler使用
 	- [pc windows开启https抓包，提示证书安装失败，解决方案](http://blog.csdn.net/qq_31666147/article/details/51488063)
 		1. 删除IE内容里的证书
