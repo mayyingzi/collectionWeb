@@ -5,7 +5,17 @@
 	- [es6 面试题 https://juejin.im/post/59c8aec0f265da065c5e965e](https://juejin.im/post/59c8aec0f265da065c5e965e)
 	- [深入理解 js this 绑定 https://segmentfault.com/a/1190000011194676](https://segmentfault.com/a/1190000011194676)
 	- [知识点探讨 https://github.com/xufei/blog/issues](https://github.com/xufei/blog/issues)
-	- [前端资料群集 https://github.com/nicejade/Front-end-tutorial](https://github.com/nicejade/Front-end-tutorial)  
+	- [前端资料群集 https://github.com/nicejade/Front-end-tutorial](https://github.com/nicejade/Front-end-tutorial)
+- 银联开发学习
+	- [http://www.cnblogs.com/abcwt112/p/4768390.html](http://www.cnblogs.com/abcwt112/p/4768390.html)	
+	- 银联商家技术服务官网
+		- https://open.unionpay.com/ajweb/help/apiTool?cateid=38
+- 支付宝支付开发
+	- https://mobiless.alipay.com/
+- 正则学习
+	- [常用正则：http://jingyan.baidu.com/article/624e74599410d634e8ba5a0a.html](http://jingyan.baidu.com/article/624e74599410d634e8ba5a0a.html)
+	- [正则图形化解析工具 https://regexper.com/](https://regexper.com/)
+	- [正则学习小书，**推荐** https://juejin.im/post/5965943ff265da6c30653879](https://juejin.im/post/5965943ff265da6c30653879) 
 - fiddler使用
 	- [pc windows开启https抓包，提示证书安装失败，解决方案](http://blog.csdn.net/qq_31666147/article/details/51488063)
 		1. 删除IE内容里的证书
@@ -452,15 +462,7 @@ expressJs学习（基于node） http://www.th7.cn/web/js/201404/29836.shtml
 - 可视化编辑
 	- http://egret.com/products/wing.html
 	
-- 银联开发学习
-	- [http://www.cnblogs.com/abcwt112/p/4768390.html](http://www.cnblogs.com/abcwt112/p/4768390.html)	
-	- 银联商家技术服务官网
-		- https://open.unionpay.com/ajweb/help/apiTool?cateid=38
-- 支付宝支付开发
-	- https://mobiless.alipay.com/
-- 正则学习
-	- [常用正则：http://jingyan.baidu.com/article/624e74599410d634e8ba5a0a.html](http://jingyan.baidu.com/article/624e74599410d634e8ba5a0a.html)
-	- [正则图形化解析工具 https://regexper.com/](https://regexper.com/)
+
 - 一些不错的UI成套组件库	
 	- [sui 就是css的写法有些老  http://m.sui.taobao.org/](http://m.sui.taobao.org/)
 	- [weiui 一套贴合微信开发的UI组件    https://mp.weixin.qq.com/wiki/2/ae9782fb42e47ad79eb7b361c2149d16.html](https://mp.weixin.qq.com/wiki/2/ae9782fb42e47ad79eb7b361c2149d16.html)
