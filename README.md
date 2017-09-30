@@ -16,6 +16,7 @@
 	- [常用正则：http://jingyan.baidu.com/article/624e74599410d634e8ba5a0a.html](http://jingyan.baidu.com/article/624e74599410d634e8ba5a0a.html)
 	- [正则图形化解析工具 https://regexper.com/](https://regexper.com/)
 	- [正则学习小书，**推荐** https://juejin.im/post/5965943ff265da6c30653879](https://juejin.im/post/5965943ff265da6c30653879)
+	
 - 前端开发常用工具整理
 	- 测试辅助工具
 		- 原生嵌入h5
@@ -62,6 +63,13 @@
 		- WebStorm
 			- 常用插件
 		- sublime
+	- node
+		- 版本管理工具
+			- nvm： 只能在 osx, linux环境下使用
+			- nvmw： windows 系统使用
+	- npm 资源切换
+		- NPM registry 管理工具
+			- nrm：能够查看和切换当前使用的registry
 
 - fiddler使用
 	- [pc windows开启https抓包，提示证书安装失败，解决方案](http://blog.csdn.net/qq_31666147/article/details/51488063)
