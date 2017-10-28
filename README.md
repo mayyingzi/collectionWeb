@@ -18,10 +18,12 @@
 	- [正则学习小书，**推荐** https://juejin.im/post/5965943ff265da6c30653879](https://juejin.im/post/5965943ff265da6c30653879)
 - webGL
 	- [WebGL：打开网页看大片 https://segmentfault.com/a/1190000011633728](https://segmentfault.com/a/1190000011633728)
-- 微信小程序模块开发	
-	- [https://segmentfault.com/a/1190000008094596](https://segmentfault.com/a/1190000008094596)
-	- [https://github.com/maichong/labrador（推荐使用）](https://github.com/maichong/labrador)	
-	- [https://github.com/wepyjs/wepy](https://github.com/wepyjs/wepy)
+- 微信小程序开发
+	- api官网
+	- 模块化开发	
+		- [https://segmentfault.com/a/1190000008094596](https://segmentfault.com/a/1190000008094596)
+		- [https://github.com/maichong/labrador（推荐使用）](https://github.com/maichong/labrador)	
+		- [https://github.com/wepyjs/wepy](https://github.com/wepyjs/wepy)
 - 前端开发常用工具整理
 	- 测试辅助工具
 		- 原生嵌入h5
