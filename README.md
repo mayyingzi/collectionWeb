@@ -18,6 +18,10 @@
 	- [正则学习小书，**推荐** https://juejin.im/post/5965943ff265da6c30653879](https://juejin.im/post/5965943ff265da6c30653879)
 - webGL
 	- [WebGL：打开网页看大片 https://segmentfault.com/a/1190000011633728](https://segmentfault.com/a/1190000011633728)
+- 微信小程序模块开发	
+	- [https://segmentfault.com/a/1190000008094596](https://segmentfault.com/a/1190000008094596)
+	- [https://github.com/maichong/labrador（推荐使用）](https://github.com/maichong/labrador)	
+	- [https://github.com/wepyjs/wepy](https://github.com/wepyjs/wepy)
 - 前端开发常用工具整理
 	- 测试辅助工具
 		- 原生嵌入h5
@@ -50,8 +54,26 @@
 		- Vue.js devtools： vue 开发debug
 		- 草料二维码： 当前网址二维码
 		- Web Server for Chrome： 辅助 service workers
+		- [Chrome 扩展的开发过程 https://segmentfault.com/a/1190000011733897](https://segmentfault.com/a/1190000011733897)
 	- 常用开发编辑器
 		- vscode: 各种扩展，推荐使用
+			- 手动安装插件(具体教程链接  http://blog.csdn.net/wangwei703/article/details/54020712)
+			- 下载链接配置
+					https:// ${publisher}.gallery.vsassets.io/_apis/public/gallery/publisher/${publisher}/extension/${extension name}/${version}/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage
+				
+					插件介绍链接页： https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome
+				
+					${publisher} ：msjsdiag
+				
+					${version}：页面版本信息（eg: 1.0.0）
+				
+					${extension name}: debugger-for-chrome
+		
+					修改下载的扩展插件名为(后缀一定是.visx)  extension name.visx
+		
+					本地cmd.exe安装指令		
+					code --install-extension debugger-for-chrome.visx
+
 			- vscde常用插件
 				- 正对代码检查的，ts，js
 				- 自动保存，autofix功能开启
@@ -71,6 +93,14 @@
 	- npm 资源切换
 		- NPM registry 管理工具
 			- nrm：能够查看和切换当前使用的registry
+	- 浏览器兼容性查询
+		- [http://caniuse.com/#](http://caniuse.com/#)
+	- 团队协作开发辅助工具
+		- git
+			- git vim命令 http://blog.csdn.net/u010918847/article/details/51900073
+			- 辅助git工具
+				- SourceTree
+		- svn
 
 - fiddler使用
 	- [pc windows开启https抓包，提示证书安装失败，解决方案](http://blog.csdn.net/qq_31666147/article/details/51488063)
@@ -125,7 +155,7 @@
 		http://www.html5cn.org/article-9285-1.html   开启网页调试教程   （微信调试工具）
 
 
-3、node.js学习（http://www.runoob.com/nodejs/nodejs-repl.html）
+- node.js学习（http://www.runoob.com/nodejs/nodejs-repl.html）
 
 	常用指令:
 
@@ -177,7 +207,7 @@
 
 
 
-4、JSON.parse()和JSON.stringify()
+- JSON.parse()和JSON.stringify()
 
 	（1）JSON.parse()   从一字符串中解析出json对象
 	
@@ -203,15 +233,14 @@
 
 	"{"a":"1","b":"2"}"
 
-5、React  学习
+- React  学习
 	
 	(1) 一个简单demo
 
 		https://github.com/ruanyf/react-demos
 
 
-
-6、MVC框架  http://www.csdn.net/article/2014-08-27/2821409-javascript-framework-comparison
+- MVC框架  http://www.csdn.net/article/2014-08-27/2821409-javascript-framework-comparison
 
 	（1） AngularJS
 	
@@ -240,7 +269,7 @@
 		http://www.yyyweb.com/ctools/demo.php?t=http%3A%2F%2Fvuejs.org%2F&h=1000&c=&n=vuejs
 
 
-7、视口单位vh vw
+- 视口单位vh vw
 
 	vw：viewpoint width，视窗宽度，1vw等于视窗宽度的1%。
 
@@ -254,7 +283,7 @@
 
 
 
-8、为什么网易淘宝等大型网站要把css和js直接写在页面内呢？
+- 为什么网易淘宝等大型网站要把css和js直接写在页面内呢？
 
 	http://bbs.blueidea.com/thread-2950645-1-1.html
 
@@ -266,10 +295,10 @@
 		（3）重要的栏目或者说叫分类、频道什么的这种的首页才这样做，首页的访问量大，可以减少连接数，也可以防止css没有加载完毕出现页面乱的现象，用户体验好
 
 
-9、打包压缩工具 webpack
+- 打包压缩工具 webpack
 
 
-10、chorm 调试学习
+- chorm 调试学习
 	
 	http://umaar.github.io/devtools-animated-2016/#/88
 
@@ -282,46 +311,44 @@
 
 
 
-11、touch slide
+- 、touch slide
 
 	（1） swiper
 
-	（2）
-
-12、css参考手册  http://css.doyoe.com/
+- css参考手册  http://css.doyoe.com/
 
 	前端手册 https://leohxj.gitbooks.io/front-end-database/content/javascript-basic/scoping-and-hoisting.html
 
 
-13、推荐博客 https://github.com/doyoe
+- 推荐博客 https://github.com/doyoe
 
 
-14、IT问答网站 http://stackoverflow.com/
+- IT问答网站 http://stackoverflow.com/
 
-15、LayUi http://www.layui.com/   前端插件 模板引擎
+- LayUi http://www.layui.com/   前端插件 模板引擎
 
-16、常用正则
+- 常用正则
 	http://www.w3cfuns.com/notes/17707/90260f5f78cf25a9d922ea5dc2097165.html
 
-17、移动端传感器
+- 移动端传感器
 	http://www.w3cfuns.com/notes/14332/77c4fb52b5b6db04929fdb619c8e5692.html
 
-18、创建SSH Key连接github或gitlab
+- 创建SSH Key连接github或gitlab
 
 	http://blog.csdn.net/troy__/article/details/40082657?utm_source=tuicool&utm_medium=referral
 
-
-19、百度H5 http://h5.baidu.com/
+- 百度H5 http://h5.baidu.com/
 
 expressJs学习（基于node） http://www.th7.cn/web/js/201404/29836.shtml
 
 	http://www.expressjs.com.cn/4x/api.html#res.send
 
-20、git 指令
+- git 指令
 
 	http://www.oschina.net/question/565065_86025
+- [http://editor.method.ac/  绘制路径，导出svg图，查看具体参数信息source](http://editor.method.ac/)
 
-21、sublime text 3 代码校验插件的安装（包括js、css）
+- sublime text 3 代码校验插件的安装（包括js、css）
 
 	http://gaohaoyang.github.io/2015/03/26/sublimeLinter/
 	http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013745374151782eb658c5a5ca454eaa451661275886c6000
@@ -546,208 +573,84 @@ expressJs学习（基于node） http://www.th7.cn/web/js/201404/29836.shtml
 	- [https://mp.weixin.qq.com/wiki 微信公众平台 · 小程序文档](https://mp.weixin.qq.com/wiki)
 	- [https://minapp.com/miniapp/  小程序应用商店](https://minapp.com/miniapp/)
 	- [https://github.com/shuncaigao/BS 小例子](https://github.com/shuncaigao/BS)
+- 设计师常用素材链接
+	- 千库网，一个免费下载图片素材的网站 [http://588ku.com/](http://588ku.com/)
+	- Unsplash分享免费高质量照片的网站，照片分辨率都挺大，而且都是真实的摄影师作品，图片多是风和静物 [https://unsplash.com/](https://unsplash.com/)
+	- 有字库，一个免下载字体，直接在线引用字体的网站
+	[http://www.youziku.com/onlinefont/index](http://www.youziku.com/onlinefont/index)
 
->>>>>>
-	千库网，一个免费下载图片素材的网站
-	http://588ku.com/
+- 前端工程师必备实用网站
+	- [http://www.jianshu.com/p/53a7da454057?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io](http://www.jianshu.com/p/53a7da454057?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
 
-	Unsplash分享免费高质量照片的网站，照片分辨率都挺大，而且都是真实的摄影师作品，图片多是风和静物
-	https://unsplash.com/
-
-	有字库，一个免下载字体，直接在线引用字体的网站
-	http://www.youziku.com/onlinefont/index
-
-	前端工程师必备实用网站
-	http://www.jianshu.com/p/53a7da454057?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io
-
-<<<<<<
-
-
->>>>>>
-	微信小程序模块开发
-	https://segmentfault.com/a/1190000008094596
-
-	https://github.com/maichong/labrador（推荐使用）
-	
-	https://github.com/wepyjs/wepy
-
-<<<<<
-
->>>>>
-	https://csstriggers.com/ css性能分析
-	减少GPU的占用
-	https://developers.google.com/web/updates/2016/07/infinite-scroller
-<<<<<
-
->>>>>
-	图片压缩 gulp-tinypng-compress
-	https://tinypng.com/developers
-
-<<<<<
-
->>>>>>
-	es6 http://es6.ruanyifeng.com/#docs/function
-
-- 学习要点：箭头函数,类,import, const, let
-
-<<<<<<
-
->>>>>>
-
-vuex 的测试。。
-https://vuex.vuejs.org/en/testing.html
-
-实用技巧：
-https://zhuanlan.zhihu.com/p/25589193
-
-<<<<<<
-
->>>>>>
-window7常用快捷键
-http://jingyan.baidu.com/article/90bc8fc8060df4f653640c13.html?st=&net_type=&bd_page_type=1&os=&rst=
-<<<<<<
-
->>>>>>
-	window环境下安装多个版本的node管理工具nvmw
-	http://www.jianshu.com/p/82c5f3a39559
-
-<<<<<
-
-
-
->>>>>>
-
-	编辑器 visual Studio Code
-	官网 https://code.visualstudio.com/
-	中文官网 http://www.vscode.org/
-
-	手动安装插件(具体教程链接  http://blog.csdn.net/wangwei703/article/details/54020712)
-	- 下载链接配置
-	https:// ${publisher}.gallery.vsassets.io/_apis/public/gallery/publisher/${publisher}/extension/${extension name}/${version}/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage
-
-	插件介绍链接页： https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome
-
-	${publisher} ：msjsdiag
-
-	${version}：页面版本信息（eg: 1.0.0）
-
-	${extension name}: debugger-for-chrome
-
-	- 修改下载的扩展插件名为(后缀一定是.visx)  extension name.visx
-
-	- 本地cmd.exe安装指令
-
-	code --install-extension debugger-for-chrome.visx
-
-<<<<<<
-
->>>>>>
-	学习计划
-	npm 
-	yarn （javascript包管理工具 https://yarnpkg.com/zh-Hans/）
-
-	react.js,vue.js,redux.js,mobx
-
-<<<<<<
-	range slider 组件可通过拖动的方式来设置一个给定范围内的数值
-	https://refreshless.com/nouislider/behaviour-option/
->>>>>>
+- 前端性能分析
+	- css性能分析
+		- [https://csstriggers.com/](https://csstriggers.com/)
+	- 减少GPU的占用
+		- [https://developers.google.com/web/updates/2016/07/infinite-scroller](https://developers.google.com/web/updates/2016/07/infinite-scroller)
+- 图片压缩
+	- [gulp-tinypng-compress https://tinypng.com/developers](https://tinypng.com/developers)
 	
 
-<<<<<<
+- es6 学习	
+	- http://es6.ruanyifeng.com/#docs/function
 
-https://segmentfault.com/a/1190000008755782
+	- 学习要点：箭头函数,类,import, const, let
 
+- vuex 的测试。。
+	- https://vuex.vuejs.org/en/testing.html
 
-推荐书：你不知道的JavaScript
-
->>>>>>
-	http://caniuse.com/#  浏览器兼容性查询
-
-<<<<<<
-
->>>>>>
-	git中vim命令 http://blog.csdn.net/u010918847/article/details/51900073
-<<<<<<
+- [vue实用技巧： https://zhuanlan.zhihu.com/p/25589193](https://zhuanlan.zhihu.com/p/25589193)
 
 
->>>>>
-	http://editor.method.ac/  绘制路径，导出svg图，查看具体参数信息source
-<<<<<
+- window7常用快捷键
+	- http://jingyan.baidu.com/article/90bc8fc8060df4f653640c13.html?st=&net_type=&bd_page_type=1&os=&rst=
+- [window环境下安装多个版本的node管理工具nvmw http://www.jianshu.com/p/82c5f3a39559](http://www.jianshu.com/p/82c5f3a39559)
 
->>>>>
-	vscode 一些推荐的插件~~
-		https://segmentfault.com/a/1190000006697219
-		https://juejin.im/post/58a691f461ff4b006c4981a0
-		https://github.com/viatsko/awesome-vscode
-<<<<<
-
->>>>>
-	es6资料
-	http://www.jianshu.com/p/cfb0893c34f1
-<<<<<
+- [range slider 组件可通过拖动的方式来设置一个给定范围内的数值 https://refreshless.com/nouislider/behaviour-option/](https://refreshless.com/nouislider/behaviour-option/)
+- [你不知道的JavaScript https://segmentfault.com/a/1190000008755782](https://segmentfault.com/a/1190000008755782)
 
 
->>>>>
+- vscode 一些推荐的插件~~
+	- https://segmentfault.com/a/1190000006697219
+	- https://juejin.im/post/58a691f461ff4b006c4981a0
+	- https://github.com/viatsko/awesome-vscode
+- [es6学习 http://www.jianshu.com/p/cfb0893c34f1](http://www.jianshu.com/p/cfb0893c34f1)
 
-	设计稿px与rem之间的转换
+- 设计稿px与rem之间的转换
 	http://www.jianshu.com/p/b00cd3506782
 
-<<<<<
+- 前端缓存技术 渐进式网页应用 Progress Web App 	
+	- https://zhuanlan.zhihu.com/p/25800461
+	- http://www.jianshu.com/p/fda430412c16
+- 利用视口实现适配（移动端）
+	- http://web.jobbole.com/91190/
+- 改npm镜像了 消灭那些老是半路卡住你的npm install吧
+		下面是命令行命令 自己按需set 
+		
+		# node-gyp 编译依赖的 node 源码镜像
+		$ npm set disturl https://npm.taobao.org/dist 
+		
+		# chromedriver 二进制包镜像
+		$ npm set chromedriver_cdnurl http://cdn.npm.taobao.org/dist/chromedriver 
+		
+		# operadriver 二进制包镜像
+		$ npm set operadriver_cdnurl http://cdn.npm.taobao.org/dist/operadriver 
+		
+		# phantomjs 二进制包镜像
+		$ npm set phantomjs_cdnurl http://cdn.npm.taobao.org/dist/phantomjs 
+		
+		# fsevents 二进制包
+		$ npm set fse_binary_host_mirror https://npm.taobao.org/mirrors/fsevents 
+		
+		# node-sass 二进制包镜像
+		$ npm set sass_binary_site http://cdn.npm.taobao.org/dist/node-sass 
+		
+		# electron 二进制包镜像
+		$ npm set electron_mirror http://cdn.npm.taobao.org/dist/electron/ 
+- npm切换依赖安装源
+	- http://www.jianshu.com/p/0e332d34d345
+- vr 全景
+	- http://blog.csdn.net/tencent_bugly/article/details/52414003
 
->>>>>
-	Progress Web App 前端缓存技术 渐进式网页应用
-	https://zhuanlan.zhihu.com/p/25800461
-	http://www.jianshu.com/p/fda430412c16
-<<<<<
->>>>>
-	利用视口实现适配（移动端）
-	http://web.jobbole.com/91190/
-<<<<<
-
->>>>>
-	https://surmon-china.github.io/vue-awesome-swiper/   vue滑块组件demo
-<<<<<
-
->>>>>
-	来来来 改npm镜像了 消灭那些老是半路卡住你的npm install吧
-下面是命令行命令 自己按需set 
-
-# node-gyp 编译依赖的 node 源码镜像
-$ npm set disturl https://npm.taobao.org/dist 
-
-# chromedriver 二进制包镜像
-$ npm set chromedriver_cdnurl http://cdn.npm.taobao.org/dist/chromedriver 
-
-# operadriver 二进制包镜像
-$ npm set operadriver_cdnurl http://cdn.npm.taobao.org/dist/operadriver 
-
-# phantomjs 二进制包镜像
-$ npm set phantomjs_cdnurl http://cdn.npm.taobao.org/dist/phantomjs 
-
-# fsevents 二进制包
-$ npm set fse_binary_host_mirror https://npm.taobao.org/mirrors/fsevents 
-
-# node-sass 二进制包镜像
-$ npm set sass_binary_site http://cdn.npm.taobao.org/dist/node-sass 
-
-# electron 二进制包镜像
-$ npm set electron_mirror http://cdn.npm.taobao.org/dist/electron/ 
-<<<<<
-
->>>>>
-切换依赖安装源
-http://www.jianshu.com/p/0e332d34d345
-<<<<<
-
->>>>>
-vr 全景
-http://blog.csdn.net/tencent_bugly/article/details/52414003
-<<<<<
-
->>>>
-webpack 3
-http://www.css88.com/doc/webpack/
-<<<<
 
 	
