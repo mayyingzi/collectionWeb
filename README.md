@@ -35,6 +35,8 @@
 				- wireshark
 	- 开发文档编辑
 		- MarkdownPad： 各种说明文档&开发文档整理编写（可以导出html）
+	- 常用笔记工具
+		- [印象笔记 https://app.yinxiang.com/Registration.action](https://app.yinxiang.com/Registration.action)
 	- 产品原型图使用工具
 		- AxureRP
 	- UI常用工具
