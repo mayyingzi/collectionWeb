@@ -1,11 +1,4 @@
 ## collection everyday
-- 2017 前端面试知识点整理
-	- [整理的面挺全的：https://segmentfault.com/a/1190000011091907](https://segmentfault.com/a/1190000011091907)
-	- [腾讯校招面试题 https://juejin.im/post/59c907d46fb9a00a4746e2db](https://juejin.im/post/59c907d46fb9a00a4746e2db)
-	- [es6 面试题 https://juejin.im/post/59c8aec0f265da065c5e965e](https://juejin.im/post/59c8aec0f265da065c5e965e)
-	- [深入理解 js this 绑定 https://segmentfault.com/a/1190000011194676](https://segmentfault.com/a/1190000011194676)
-	- [知识点探讨 https://github.com/xufei/blog/issues](https://github.com/xufei/blog/issues)
-	- [前端资料群集 https://github.com/nicejade/Front-end-tutorial](https://github.com/nicejade/Front-end-tutorial)
 - 银联开发学习
 	- [http://www.cnblogs.com/abcwt112/p/4768390.html](http://www.cnblogs.com/abcwt112/p/4768390.html)	
 	- 银联商家技术服务官网
@@ -143,7 +136,6 @@
 
 - gulp + webpack 构建多页面前端项目
 
-
 		1、[微信调试](http://mp.weixin.qq.com/wiki/10/e5f772f4521da17fa0d7304f68b97d7e.html)	
 		
 			（1）wxdebugger_0.4.0_x64.exe  微信开发着工具 模拟微信客户端
@@ -161,56 +153,48 @@
 
 - node.js学习（http://www.runoob.com/nodejs/nodejs-repl.html）
 
-	常用指令:
-
-	查看当前node的版本		node -v
-	
-	查看npm的版本			npm -v
-
-	nmp升级版本			npm install npm -g
-
-	npm安装Node.js模块语法		npm install 模块名称（例如：express） 
-
-	本地安装与全局安装：
-
-	本地安装（即项目当前环境）	npm install 模块名称   
-
-	全局安装（window）		npm install 模块名称  -g   
- 
-	全局安装模块查看		npm ls -g
-
-	Node.js模块卸载			npm uninstall 模块名称
-	
-	模块更新			npm update 模块名称
-
-	搜索模块			npm search 模块名称
-
-	创建模块package.json		npm init
-
-	Jade 是 Node 的一个模板引擎，一句话就是让我们能够更快更简便地写HTML
-	$ npm install jade -g
-
-
-
-	artTemplate前端模板引擎
-	
-
-	gulp插件命安装，并写入package 
+		常用指令:
+		
+		查看当前node的版本		node -v
+		
+		查看npm的版本			npm -v
+		
+		nmp升级版本			npm install npm -g
+		
+		npm安装Node.js模块语法		npm install 模块名称（例如：express） 
+		
+		本地安装与全局安装：
+		
+		本地安装（即项目当前环境）	npm install 模块名称   
+		
+		全局安装（window）		npm install 模块名称  -g   
+		
+		全局安装模块查看		npm ls -g
+		
+		Node.js模块卸载			npm uninstall 模块名称
+		
+		模块更新			npm update 模块名称
+		
+		搜索模块			npm search 模块名称
+		
+		创建模块package.json		npm init
+		
+		Jade 是 Node 的一个模板引擎，一句话就是让我们能够更快更简便地写HTML
+		$ npm install jade -g
+		
+		
+		
+		artTemplate前端模板引擎
+		
+		
+		gulp插件命安装，并写入package 
 
 					npm install --save-dev 插件名称
 
+		gulp 插件  http://www.cnblogs.com/2050/p/4198792.html
 
-
-	gulp 插件  http://www.cnblogs.com/2050/p/4198792.html
-
-	https://github.com/fmal/gulp-inline-source    gulp-inline-source 
-	Inline all <script>, <link> and <img> tags that contain the inline attribute with inline-source.
-
-
-
-
-
-
+		https://github.com/fmal/gulp-inline-source    gulp-inline-source 
+		Inline all <script>, <link> and <img> tags that contain the inline attribute with inline-source.
 - JSON.parse()和JSON.stringify()
 
 	（1）JSON.parse()   从一字符串中解析出json对象
@@ -655,6 +639,15 @@ expressJs学习（基于node） http://www.th7.cn/web/js/201404/29836.shtml
 	- http://www.jianshu.com/p/0e332d34d345
 - vr 全景
 	- http://blog.csdn.net/tencent_bugly/article/details/52414003
+
+- 2017 前端面试知识点整理
+	- [整理的面挺全的：https://segmentfault.com/a/1190000011091907](https://segmentfault.com/a/1190000011091907)
+	- [腾讯校招面试题 https://juejin.im/post/59c907d46fb9a00a4746e2db](https://juejin.im/post/59c907d46fb9a00a4746e2db)
+	- [es6 面试题 https://juejin.im/post/59c8aec0f265da065c5e965e](https://juejin.im/post/59c8aec0f265da065c5e965e)
+	- [深入理解 js this 绑定 https://segmentfault.com/a/1190000011194676](https://segmentfault.com/a/1190000011194676)
+	- [知识点探讨 https://github.com/xufei/blog/issues](https://github.com/xufei/blog/issues)
+	- [前端资料群集 https://github.com/nicejade/Front-end-tutorial](https://github.com/nicejade/Front-end-tutorial)
+	- [饿了么前端面试 https://elemefe.github.io/node-interview/#/sections/zh-cn/](https://elemefe.github.io/node-interview/#/sections/zh-cn/)
 
 
 	
