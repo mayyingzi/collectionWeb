@@ -10,6 +10,9 @@
 		- https://open.unionpay.com/ajweb/help/apiTool?cateid=38
 - 支付宝支付开发
 	- https://mobiless.alipay.com/
+- 微信公众号支付开发
+	- [https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421141115](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421141115)
+	- [https://pay.weixin.qq.com/wiki/doc/api/index.html](https://pay.weixin.qq.com/wiki/doc/api/index.html)
 - 正则学习
 	- [常用正则：http://jingyan.baidu.com/article/624e74599410d634e8ba5a0a.html](http://jingyan.baidu.com/article/624e74599410d634e8ba5a0a.html)
 	- [正则图形化解析工具 https://regexper.com/](https://regexper.com/)
@@ -26,10 +29,14 @@
 	- 测试辅助工具
 		- 原生嵌入h5
 			- 模拟器
-				- 安卓： 夜神模拟器  海马玩模拟器  BlueStacks 
-				- ios：iPadian（感觉不好用）
+				- **安卓**
+					- 夜神模拟器 
+					- 海马玩模拟器
+					- BlueStacks(有点笨重，不推荐使用) 
+				- **ios**
+					- iPadian（感觉不好用）
 			- 抓包，代理
-				- fiddler
+				- **fiddler**（windows）
 				- wireshark
 	- 开发文档编辑
 		- MarkdownPad： 各种说明文档&开发文档整理编写（可以导出html）
@@ -57,6 +64,10 @@
 		- 草料二维码： 当前网址二维码
 		- Web Server for Chrome： 辅助 service workers
 		- [Chrome 扩展的开发过程 https://segmentfault.com/a/1190000011733897](https://segmentfault.com/a/1190000011733897)
+	- **前端常用调试-移动设备**
+		- [移动设备链接pc，chrome Remote Debugging](http://blog.csdn.net/freshlover/article/details/42528643)
+		- 模拟器（**目前夜神模拟器&BlueStacks，在chrome上可以检测到 设备**）打开页面，chrome Remote Debugging 检测
+		- [UC浏览器访问调试 http://plus.uc.cn/document/webapp/doc5.html](http://plus.uc.cn/document/webapp/doc5.html)
 	- 常用开发编辑器
 		- vscode: 各种扩展，推荐使用
 			- 手动安装插件(具体教程链接  http://blog.csdn.net/wangwei703/article/details/54020712)
@@ -76,7 +87,7 @@
 					本地cmd.exe安装指令		
 					code --install-extension debugger-for-chrome.visx
 
-			- vscde常用插件
+			- vscode常用插件
 				- 正对代码检查的，ts，js
 				- 自动保存，autofix功能开启
 				- 快速搜索node_modules： Search node_modules
@@ -254,7 +265,7 @@
 
 	MV*  框架  http://todomvc.com/
 
-		vue，angular，avalon
+		vue，angular，avalon， react， weex
 
 		http://cn.vuejs.org/guide/
 
