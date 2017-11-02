@@ -66,6 +66,7 @@
 		- [Chrome 扩展的开发过程 https://segmentfault.com/a/1190000011733897](https://segmentfault.com/a/1190000011733897)
 	- **前端常用调试-移动设备**
 		- [移动设备链接pc，chrome Remote Debugging](http://blog.csdn.net/freshlover/article/details/42528643)
+			- chrome://inspect/#devices
 		- 模拟器（**目前夜神模拟器&BlueStacks，在chrome上可以检测到 设备**）打开页面，chrome Remote Debugging 检测
 		- [UC浏览器访问调试 http://plus.uc.cn/document/webapp/doc5.html](http://plus.uc.cn/document/webapp/doc5.html)
 	- 常用开发编辑器
@@ -110,11 +111,17 @@
 		- [http://caniuse.com/#](http://caniuse.com/#)
 	- 团队协作开发辅助工具
 		- git
+			- [git之https或http方式设置记住用户名和密码的方法](http://www.cnblogs.com/wish123/p/3937851.html)
 			- git vim命令 http://blog.csdn.net/u010918847/article/details/51900073
 			- 辅助git工具
 				- SourceTree
-		- svn
-
+			- [git常用指令 http://blog.csdn.net/dengsilinming/article/details/8000622](http://blog.csdn.net/dengsilinming/article/details/8000622)
+				- 复制远成仓库到本地： git clone [url]
+				- 查看远程仓库： git remote -v
+				- 添加远程仓库到本地: git remote add [name] [url]
+				- 删除远程仓库： git remote rm [name]
+				- git branch, git status, git merge 
+		- svn	
 - fiddler使用
 	- [pc windows开启https抓包，提示证书安装失败，解决方案](http://blog.csdn.net/qq_31666147/article/details/51488063)
 		1. 删除IE内容里的证书
@@ -135,10 +142,36 @@
 - 本地址配置一个http文件服务器
 	- anywhere
 	- http-server
+- 前端性能分析
+	- css性能分析
+		- [https://csstriggers.com/](https://csstriggers.com/)
+	- 减少GPU的占用
+		- [https://developers.google.com/web/updates/2016/07/infinite-scroller](https://developers.google.com/web/updates/2016/07/infinite-scroller)
+- 图片压缩
+	- [gulp-tinypng-compress https://tinypng.com/developers](https://tinypng.com/developers)
+- webpack学习地址	
+	- https://github.com/slashhuang/blog/issues/1
+	- https://www.zhihu.com/question/39290543
+
+- css写各种常用的icon（强烈推荐）	
+	- [http://cssicon.space/#/icon/snow](http://cssicon.space/#/icon/snow)
+- iconfont文字icon	
+	- http://lib.h-ui.net/Hui-iconfont/1.0.7/demo.html
+	- http://fontawesome.dashgame.com/
+
+- 一些不错的UI成套组件库	
+	- [sui 就是css的写法有些老  http://m.sui.taobao.org/](http://m.sui.taobao.org/)
+	- [weiui 一套贴合微信开发的UI组件    https://mp.weixin.qq.com/wiki/2/ae9782fb42e47ad79eb7b361c2149d16.html](https://mp.weixin.qq.com/wiki/2/ae9782fb42e47ad79eb7b361c2149d16.html)
+
+- [web中的url中的http协议与https，相对协议地址](https://segmentfault.com/q/1010000000368868)	
+
 - [e6箭头函数使用说明](https://segmentfault.com/a/1190000010946164)
+- 各种学习视频
+	- [https://www.youtube.com/user/thenewboston/playlists](https://www.youtube.com/user/thenewboston/playlists)
 - 小程序案例
 	- [云档 https://github.com/SmallRuralDog/cloud-doc](https://github.com/SmallRuralDog/cloud-doc)
-
+- 可视化编辑
+	- http://egret.com/products/wing.html
 - 书单
 
 		/**书单 （s 11:14 2016/4/21）**/
@@ -342,13 +375,10 @@
 
 - 百度H5 http://h5.baidu.com/
 
-expressJs学习（基于node） http://www.th7.cn/web/js/201404/29836.shtml
-
-	http://www.expressjs.com.cn/4x/api.html#res.send
-
-- git 指令
-
-	http://www.oschina.net/question/565065_86025
+- expressJs学习（基于node） 
+	- http://www.th7.cn/web/js/201404/29836.shtml
+	- http://www.expressjs.com.cn/4x/api.html#res.send
+	
 - [http://editor.method.ac/  绘制路径，导出svg图，查看具体参数信息source](http://editor.method.ac/)
 
 - sublime text 3 代码校验插件的安装（包括js、css）
@@ -386,12 +416,6 @@ expressJs学习（基于node） http://www.th7.cn/web/js/201404/29836.shtml
 
 
 - [node 模板（第一个）](http://www.imooc.com/view/590)
-
-
-
-
-
-- [git之https或http方式设置记住用户名和密码的方法](http://www.cnblogs.com/wish123/p/3937851.html)
 - [效果不错的动画](https://googlechrome.github.io/ui-element-samples/)
 
 
@@ -534,35 +558,6 @@ expressJs学习（基于node） http://www.th7.cn/web/js/201404/29836.shtml
 	- https://www.zhihu.com/question/22146521
 - 常用页面效果demo
 	http://web.jobbole.com/88005/
-- git辅助工具:souceTree
-	https://www.sourcetreeapp.com/
-	
-- 各种学习视频
-	- [https://www.youtube.com/user/thenewboston/playlists](https://www.youtube.com/user/thenewboston/playlists)
-
-
-- iconfont文字icon	
-	- http://lib.h-ui.net/Hui-iconfont/1.0.7/demo.html
-	- http://fontawesome.dashgame.com/
-
-- 可视化编辑
-	- http://egret.com/products/wing.html
-	
-
-- 一些不错的UI成套组件库	
-	- [sui 就是css的写法有些老  http://m.sui.taobao.org/](http://m.sui.taobao.org/)
-	- [weiui 一套贴合微信开发的UI组件    https://mp.weixin.qq.com/wiki/2/ae9782fb42e47ad79eb7b361c2149d16.html](https://mp.weixin.qq.com/wiki/2/ae9782fb42e47ad79eb7b361c2149d16.html)
-
-- [web中的url中的http协议与https，相对协议地址](https://segmentfault.com/q/1010000000368868)
-	
-- webpack学习地址	
-	- https://github.com/slashhuang/blog/issues/1
-	- https://www.zhihu.com/question/39290543
-
-
-- css写各种常用的icon（强烈推荐）	
-	- [http://cssicon.space/#/icon/snow](http://cssicon.space/#/icon/snow)
-
 - 原生与h5的交互	
 	- http://blog.csdn.net/ggh990640782/article/details/44598097
 
@@ -585,13 +580,7 @@ expressJs学习（基于node） http://www.th7.cn/web/js/201404/29836.shtml
 - 前端工程师必备实用网站
 	- [http://www.jianshu.com/p/53a7da454057?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io](http://www.jianshu.com/p/53a7da454057?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
 
-- 前端性能分析
-	- css性能分析
-		- [https://csstriggers.com/](https://csstriggers.com/)
-	- 减少GPU的占用
-		- [https://developers.google.com/web/updates/2016/07/infinite-scroller](https://developers.google.com/web/updates/2016/07/infinite-scroller)
-- 图片压缩
-	- [gulp-tinypng-compress https://tinypng.com/developers](https://tinypng.com/developers)
+
 	
 
 - es6 学习	
