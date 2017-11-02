@@ -1,4 +1,9 @@
 ## collection everyday
+- electron（桌面应用开发）
+	- 官网 https://electron.atom.io/
+	- 中文教程官网 https://electron.org.cn/
+	- 学习教程 https://www.w3cschool.cn/electronmanual/
+	-[ demo https://github.com/k-water/electron-filesystem](https://github.com/k-water/electron-filesystem)
 - 银联开发学习
 	- [http://www.cnblogs.com/abcwt112/p/4768390.html](http://www.cnblogs.com/abcwt112/p/4768390.html)	
 	- 银联商家技术服务官网
@@ -117,9 +122,8 @@
 	
 
 - 本地址配置一个http文件服务器
-
-		anywhere
-		http-server
+	- anywhere
+	- http-server
 - [e6箭头函数使用说明](https://segmentfault.com/a/1190000010946164)
 - 小程序案例
 	- [云档 https://github.com/SmallRuralDog/cloud-doc](https://github.com/SmallRuralDog/cloud-doc)
