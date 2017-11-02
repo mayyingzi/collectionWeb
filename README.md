@@ -147,6 +147,8 @@
 		- [https://csstriggers.com/](https://csstriggers.com/)
 	- 减少GPU的占用
 		- [https://developers.google.com/web/updates/2016/07/infinite-scroller](https://developers.google.com/web/updates/2016/07/infinite-scroller)
+- flex布局学习
+	- [http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 - 图片压缩
 	- [gulp-tinypng-compress https://tinypng.com/developers](https://tinypng.com/developers)
 - webpack学习地址	
