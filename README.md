@@ -121,7 +121,8 @@
 				- 添加远程仓库到本地: git remote add [name] [url]
 				- 删除远程仓库： git remote rm [name]
 				- git branch, git status, git merge 
-		- svn	
+		- svn
+			- [svn回退到指定版本 http://blog.csdn.net/u013131533/article/details/48160759](http://blog.csdn.net/u013131533/article/details/48160759)	
 - fiddler使用
 	- [pc windows开启https抓包，提示证书安装失败，解决方案](http://blog.csdn.net/qq_31666147/article/details/51488063)
 		1. 删除IE内容里的证书
@@ -654,6 +655,8 @@
 	- [知识点探讨 https://github.com/xufei/blog/issues](https://github.com/xufei/blog/issues)
 	- [前端资料群集 https://github.com/nicejade/Front-end-tutorial](https://github.com/nicejade/Front-end-tutorial)
 	- [饿了么前端面试 https://elemefe.github.io/node-interview/#/sections/zh-cn/](https://elemefe.github.io/node-interview/#/sections/zh-cn/)
+	- 前端常用导航
+		- [http://www.alloyteam.com/nav/](http://www.alloyteam.com/nav/)
 
 
 	
