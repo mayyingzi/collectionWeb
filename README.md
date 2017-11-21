@@ -39,6 +39,11 @@
 			- 抓包，代理
 				- **fiddler**（windows）
 				- wireshark
+			- 自动化测试、性能分析
+				- h5 自动化用：selenium
+				- 安卓ios应用自动化： appium
+				- jmeter性能分析
+
 	- 开发文档编辑
 		- MarkdownPad： 各种说明文档&开发文档整理编写（可以导出html）
 	- 常用笔记工具
@@ -107,7 +112,7 @@
 			- nvmw： windows 系统使用
 	- npm 资源切换
 		- NPM registry 管理工具
-			- nrm：能够查看和切换当前使用的registry
+			- **nrm**：**能够查看和切换当前使用的registry**
 	- 浏览器兼容性查询
 		- [http://caniuse.com/#](http://caniuse.com/#)
 	- 团队协作开发辅助工具
@@ -123,7 +128,10 @@
 				- 删除远程仓库： git remote rm [name]
 				- git branch, git status, git merge 
 		- svn
-			- [svn回退到指定版本 http://blog.csdn.net/u013131533/article/details/48160759](http://blog.csdn.net/u013131533/article/details/48160759)	
+			- [svn回退到指定版本 http://blog.csdn.net/u013131533/article/details/48160759](http://blog.csdn.net/u013131533/article/details/48160759)
+	- cmd
+		- [常用的指令 http://blog.csdn.net/Demo_18/article/details/78188121](http://blog.csdn.net/Demo_18/article/details/78188121)
+		- [辅助工具 cmder	](http://cmder.net/)
 - fiddler使用
 	- [pc windows开启https抓包，提示证书安装失败，解决方案](http://blog.csdn.net/qq_31666147/article/details/51488063)
 		1. 删除IE内容里的证书
@@ -656,8 +664,11 @@
 	- [知识点探讨 https://github.com/xufei/blog/issues](https://github.com/xufei/blog/issues)
 	- [前端资料群集 https://github.com/nicejade/Front-end-tutorial](https://github.com/nicejade/Front-end-tutorial)
 	- [饿了么前端面试 https://elemefe.github.io/node-interview/#/sections/zh-cn/](https://elemefe.github.io/node-interview/#/sections/zh-cn/)
+	- [2017年前端面试题整理汇总100题 http://blog.csdn.net/kebi007/article/details/54882425#comments](http://blog.csdn.net/kebi007/article/details/54882425#comments)
 	- 前端常用导航
 		- [http://www.alloyteam.com/nav/](http://www.alloyteam.com/nav/)
+- Angular4
+	- [https://segmentfault.com/a/1190000009819720](https://segmentfault.com/a/1190000009819720)
 
 
 	
