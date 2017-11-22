@@ -1,4 +1,5 @@
 ## collection everyday
+- [Ramda 函数库 function first，data last](http://www.ruanyifeng.com/blog/2017/03/ramda.html) 
 - electron（桌面应用开发）
 	- 官网 https://electron.atom.io/
 	- 中文教程官网 https://electron.org.cn/
