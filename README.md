@@ -673,6 +673,18 @@
 		- [http://www.alloyteam.com/nav/](http://www.alloyteam.com/nav/)
 - Angular4
 	- [https://segmentfault.com/a/1190000009819720](https://segmentfault.com/a/1190000009819720)
+- 前端常用网站
+	- [Google Developers https://developers.google.com/](https://developers.google.com/)
+	- [segmentfault https://segmentfault.com/blogs](https://segmentfault.com/blogs)
+	- [https://stackoverflow.com/](https://stackoverflow.com/)
+	- [https://github.com](https://github.com)
+	- 在线图片压缩
+		- [jpg http://www.tuhaokuai.com/image](http://www.tuhaokuai.com/image)
+		- [tinypng https://tinypng.com/](https://tinypng.com/)
+	- [正则图形说明 https://regexper.com/](https://regexper.com/)
+	- [掘金 https://juejin.im/](https://juejin.im/)
+	- [代码对比 diff https://www.diffchecker.com/diff](https://www.diffchecker.com/diff)
+	- [http://babeljs.io/](http://babeljs.io/)
 
 
 
