@@ -44,6 +44,9 @@
 				- h5 自动化用：selenium
 				- 安卓ios应用自动化： appium
 				- jmeter性能分析
+	- 常用web开发浏览器
+		- pc：Safari、QQ浏览器、Google Chrome、Internet Explorer、Mozilla Firefox、360安全浏览器、搜狗高速浏览器、猎豹安全浏览器
+		- 手机端浏览器：QQ浏览器、UC浏览器、360手机浏览器、百度浏览器、搜狗浏览器、猎豹浏览器、chrome浏览器、欧朋浏览器、2345浏览器、绿茶浏览器
 
 	- 开发文档编辑
 		- MarkdownPad： 各种说明文档&开发文档整理编写（可以导出html）
@@ -670,6 +673,7 @@
 		- [http://www.alloyteam.com/nav/](http://www.alloyteam.com/nav/)
 - Angular4
 	- [https://segmentfault.com/a/1190000009819720](https://segmentfault.com/a/1190000009819720)
+
 
 
 	
