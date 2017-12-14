@@ -153,6 +153,7 @@
 					设置 –> 通用 –> 关于本机 –> 证书信息设置; 将Fiddler的证书开关打开就行了
 	- 其他优秀教程推荐
 		- http://blog.csdn.net/htdeyanlei/article/details/52874248
+		- http://blog.csdn.net/wangjun5159/article/details/52202059
 	
 
 - 本地址配置一个http文件服务器
