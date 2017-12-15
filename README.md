@@ -1,4 +1,5 @@
 ## collection everyday
+- [常用数据可视化技术栈](https://www.zhihu.com/question/19929609)
 - [打造自己的JavaScript武器库](https://juejin.im/post/5a091afe6fb9a044ff30f402?utm_source=gold_browser_extension)
 - [Ramda 函数库 function first，data last](http://www.ruanyifeng.com/blog/2017/03/ramda.html) 
 - [gulp babel 处理提示 exports is not defined](https://github.com/JeremyEnglert/JointsWP/issues/249)
