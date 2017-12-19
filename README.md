@@ -1,4 +1,5 @@
 ## collection everyday
+- [vue 各种components组件](https://vuejsexamples.com/)
 - [fis3帮助文档]( http://fis.baidu.com/fis3/docs/beginning/release.html)
 - [常用数据可视化技术栈](https://www.zhihu.com/question/19929609)
 - [打造自己的JavaScript武器库](https://juejin.im/post/5a091afe6fb9a044ff30f402?utm_source=gold_browser_extension)
