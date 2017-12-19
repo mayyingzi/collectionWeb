@@ -1,4 +1,5 @@
 ## collection everyday
+- [js学习总结](https://segmentfault.com/bookmark/1230000002226470)
 - [Vue-TypeScript全面教程](https://juejin.im/post/5a38830351882506a463bbcc)
 - [vue 各种components组件](https://vuejsexamples.com/)
 - [fis3帮助文档]( http://fis.baidu.com/fis3/docs/beginning/release.html)
