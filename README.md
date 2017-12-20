@@ -1,5 +1,6 @@
 ## collection everyday
 - [parcel 前端构建工具, 一个和wabpack类似，但是速度更快](https://parceljs.org/code_splitting.html)
+- [parcel 应用于vue中](https://segmentfault.com/a/1190000012427886)
 - [js学习总结](https://segmentfault.com/bookmark/1230000002226470)
 - [Vue-TypeScript全面教程](https://juejin.im/post/5a38830351882506a463bbcc)
 - [vue 各种components组件](https://vuejsexamples.com/)
