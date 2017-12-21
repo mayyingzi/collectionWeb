@@ -1,4 +1,5 @@
 ## collection everyday
+- [Promise some simple template](https://juejin.im/entry/5a3a113a51882569707821c0?utm_source=gold_browser_extension)
 - [parcel 前端构建工具, 一个和wabpack类似，但是速度更快](https://parceljs.org/code_splitting.html)
 - [parcel 应用于vue中](https://segmentfault.com/a/1190000012427886)
 - [js学习总结](https://segmentfault.com/bookmark/1230000002226470)
