@@ -76,6 +76,8 @@
 		- Lantern
 		- Proxifier
 	- chrome常用插件
+		- 掘金： 为设计师、程序员、产品每日发现优质的内容
+		- 谷歌访问助手： 解决chrome扩展无法自动更新问题，同时可以访问google搜索，gmail邮箱，google+等谷歌服务
 		- ADB： 调试安卓
 		- Allow-Control-Allow-Origin： 跨域处理
 		- Axure RP Extension for Chrome：原型图预览
