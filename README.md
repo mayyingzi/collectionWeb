@@ -1,4 +1,5 @@
 ## collection everyday
+- [接口模拟 easy mock](https://easy-mock.com/)
 - [js常用设计模式](https://segmentfault.com/a/1190000012585364)
 - [html5中使用new Date() ,参数最好使用 '2017/12/02'](http://blog.csdn.net/zhaowei5210/article/details/50177851)
 - [2017前端学习资源分享](https://juejin.im/post/5a0c1956f265da430a501f51?utm_source=gold_browser_extension)
