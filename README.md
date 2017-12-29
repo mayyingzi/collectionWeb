@@ -1,5 +1,6 @@
 ## collection everyday
 - [js常用设计模式](https://segmentfault.com/a/1190000012585364)
+- [html5中使用new Date() ,参数最好使用 '2017/12/02'](http://blog.csdn.net/zhaowei5210/article/details/50177851)
 - [2017前端学习资源分享](https://juejin.im/post/5a0c1956f265da430a501f51?utm_source=gold_browser_extension)
 - [Promise some simple template](https://juejin.im/entry/5a3a113a51882569707821c0?utm_source=gold_browser_extension)
 - [parcel 前端构建工具, 一个和wabpack类似，但是速度更快](https://parceljs.org/code_splitting.html)
