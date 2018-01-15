@@ -1,4 +1,5 @@
 ## collection everyday
+- [免费编程书籍笔记【英】](http://goalkicker.com/)
 - [技术胖前段视频教程](https://juejin.im/post/5a5bc8c36fb9a01ca26774eb?utm_source=gold_browser_extension)
 - [接口模拟 easy mock](https://easy-mock.com/)
 - [js常用设计模式](https://segmentfault.com/a/1190000012585364)
