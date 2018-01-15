@@ -1,5 +1,6 @@
 ## collection everyday
 - [前端框架和库的差异](https://zhuanlan.zhihu.com/p/26078359?group_id=830801800406917120)
+	- 本质区别： you call libs, frameworks call you
 - [免费编程书籍笔记【英】](http://goalkicker.com/)
 - [技术胖前段视频教程](https://juejin.im/post/5a5bc8c36fb9a01ca26774eb?utm_source=gold_browser_extension)
 - [接口模拟 easy mock](https://easy-mock.com/)
