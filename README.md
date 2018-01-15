@@ -1,4 +1,5 @@
 ## collection everyday
+- [Fundebug 全栈JavaScript错误实时监控平台,用户应用出现错误是，通过邮件或者第三方工具发送警告给开发者](https://docs.fundebug.com/)
 - [vue理解与学习（推荐）](https://juejin.im/entry/5a54b747518825734216c3df?utm_source=gold_browser_extension)
 - [前端框架和库的差异](https://zhuanlan.zhihu.com/p/26078359?group_id=830801800406917120)
 	- 本质区别： you call libs, frameworks call you
