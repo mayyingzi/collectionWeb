@@ -1,4 +1,5 @@
 ## collection everyday
+- [react 学习指南](https://juejin.im/entry/5a6f237b6fb9a01cbd58dd9d?utm_source=gold_browser_extension)
 - [vue 组件缓存处理插件：vue-navigation](https://www.zhihu.com/question/51948961)
 - [js处理唤起本地app方式总结](https://segmentfault.com/a/1190000012940046)
 - [Fundebug 全栈JavaScript错误实时监控平台,用户应用出现错误是，通过邮件或者第三方工具发送警告给开发者](https://docs.fundebug.com/)
