@@ -1,4 +1,5 @@
 ## collection everyday
+- [优秀博主文章推荐，vscode ，vue， NG，react总结（！！强烈推荐看）](https://juejin.im/user/575ebdbd5bbb5000638173fb/posts)
 - [react 学习指南](https://juejin.im/entry/5a6f237b6fb9a01cbd58dd9d?utm_source=gold_browser_extension)
 - [vue 组件缓存处理插件：vue-navigation](https://www.zhihu.com/question/51948961)
 - [js处理唤起本地app方式总结](https://segmentfault.com/a/1190000012940046)
