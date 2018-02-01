@@ -1,0 +1,31 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=format-detection content="telephone=no"><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black><meta name=viewport content="width=device-width,initial-scale=1,user-scalable=0"><meta name=wap-font-scale content=no><title>新希望六和饲料产业报表</title><script>var metaEl = document.querySelector('meta[name="viewport"]');
+        var ua = window.navigator.userAgent;
+        var isAndroid = /android/gi.test(ua);
+        var isIphone = /iphone/gi.test(ua);
+        var dpr = window.devicePixelRatio || 1;
+
+        function setRem() {
+            var contentWidth;
+            if (isIphone) {
+                contentWidth = window.screen.width * dpr;
+            } else if (isAndroid) {
+                contentWidth = window.innerWidth * dpr;
+            } else {
+                contentWidth = 360;
+            }
+            document.documentElement.style.fontSize = 100 * contentWidth / 720 + 'px';
+        }
+
+        if (isAndroid) {
+            dpr = 1;
+        } else if (isIphone) {
+            if (dpr > 2) {
+                dpr = 2;
+            }
+        }
+        var scale = (1 / dpr).toFixed(2);
+        metaEl.setAttribute('content', 'initial-scale=' + scale + ',maximum-scale=' + scale + ', minimum-scale=' + scale + ',user-scalable=no');
+        document.documentElement.setAttribute('data-dpr', dpr);
+
+        setRem();
+        addEventListener('DOMContentLoaded', setRem);</script><link rel="shortcut icon" href=./favicon.ico><link href=./static/css/app.c6e66007976c3b0c90b1692c9c900191.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.dbbf5342958a050b16f0.js></script><script type=text/javascript src=./static/js/vendor.5cecdb25f87f82be5a5f.js></script><script type=text/javascript src=./static/js/app.13af7effe20380848813.js></script></body></html>
