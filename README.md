@@ -724,5 +724,16 @@
 	- [http://babeljs.io/](http://babeljs.io/)
 
 
+# 个人开发项目打包预览
+## [**vue-demo-profile**: vue项目搭建模板，主要处理功能](https://mayyingzi.github.io/collectionWeb/examples/vue-demo-profile)
+- api，ajax请求
+- 系统环境变量处理
+- 路由跳转
+- 历史记录：component页面缓存处理
+- 模拟app页面切换转场：交互动效
+- 使用rem自适应页面
+- styule预编译样式工具
+
+
 
 	
