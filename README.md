@@ -157,6 +157,16 @@
 				- 添加远程仓库到本地: git remote add [name] [url]
 				- 删除远程仓库： git remote rm [name]
 				- git branch, git status, git merge 
+				- 冲突处理步骤
+					- 手动处理conflict
+						- 使用Git时，在pull、merge、rebase的过程中，遇到conflict时，以上处理过程会终端，并且命令行中显示（xxx|MERGING）的状态（Windows下Git Bash中显示的状态），经常会遇到conflict的情况：
+						```bash
+						命令行下解决冲突的方法为
+						1.工具编辑有冲突的文件，去除冲突标记（就是>>>>>>>> ======= <<<<<<这样的东西），并把文本冲突解决掉；
+						2.然后使用git add 有冲突的文件，这时文件的冲突标记就变成了修改标记了（在windows下安装TortoiseGit就能看到文件图标的变化了）；
+						3.将所有有冲突的文件解决完后，使用git commit -a -m "Xxx"。
+						将本地修改的文件提交到远程仓库：git push [仓库名称]
+						```
 		- svn
 			- [svn回退到指定版本 http://blog.csdn.net/u013131533/article/details/48160759](http://blog.csdn.net/u013131533/article/details/48160759)
 	- cmd
