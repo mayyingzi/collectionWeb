@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test for a padding style</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .pd-box {
+            width: 100%;
+            padding-top: 50%;
+            background-color: #ccc;
+            position: relative;
+            background: url(./img/test_io.png) no-repeat center center;
+            background-size: cover;
+        }
+        
+        .main {
+            width: 62.5%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            padding: 6.25% 0;
+        }
+        
+        .con-center {
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #0046b2;
+            overflow: hidden;
+        }
+        
+        .con-left {
+            color: #fff;
+            float: left;
+            width: 33%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        
+        .con-right {
+            float: right;
+            width: 67%;
+        }
+        
+        .con-right img {
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pd-box">
+        <div class="main">
+            <div class="con-center">
+                <div class="con-left">
+                    <h3>文案信息</h3>
+                </div>
+                <div class="con-right">
+                    <img src="./img/c_img1.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
