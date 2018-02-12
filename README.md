@@ -1,4 +1,5 @@
 ## collection everyday
+- [前端面部识别-处理](https://juejin.im/post/5a7f9e255188257a5f1ec13e?utm_source=gold_browser_extension)
 - [nginx部署前端SPA应用实践](https://segmentfault.com/a/1190000013218418)
 - [前端实现在线pdf、word、xls、ppt等文件](https://juejin.im/post/5a7badf26fb9a063353198a1?utm_source=gold_browser_extension)
 - [iconfont素材下载阿里巴巴矢量图标库](http://iconfont.cn/home/index?spm=a313x.7781069.1998910419.2)
