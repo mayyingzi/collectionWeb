@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Egret</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <style>
+        html, body {
+            -ms-touch-action: none;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+  	<!--<div id="preloading">
+		<img src="resource/assets/preloading.gif" />
+	</div>-->
+
+    <script egret="lib" src="libs/jszip.min.js"></script>
+
+    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
+         data-entry-class="Main"
+         data-orientation="auto"
+         data-scale-mode="showAll"
+         data-frame-rate="30"
+         data-content-width="741"
+         data-content-height="1316"
+         data-show-paint-rect="false"
+         data-multi-fingered="2"
+         data-show-fps="false" data-show-log="false"
+         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+    </div>
+    <script>
+		function PlaySound(os, sound, time) {
+			if (os != "iOS")
+				return;
+
+			if (sound == null){
+				console.log('sound err');
+				return;
+			}
+			
+			if (typeof WeixinJSBridge != 'undefined') {
+				WeixinJSBridge.invoke('getNetworkType', {}, function (e) { 
+					return sound.play(0, time);
+				});
+			} else {
+				return sound.play(0, time);
+			}
+		}
+
+        function unzip(arrayBuffer, file) {
+	        var zip = new JSZip(arrayBuffer);
+	        var text = zip.file(file).asText();
+			return text;
+	    }		
+
+	    try {
+	        loadZip("libs/egret.cfg", function (zip) {
+	            var files = ["egret.min.js", "egret.web.min.js", "eui.min.js", "game.min.js", "tween.min.js", "res.min.js"];
+	            for (var i = 0; i < files.length; i++) {
+	                createScript(zip,files[i]);
+	            }
+	            loadZip("main.min.cfg" + "?v=" + Math.random(), function (zip) {
+	                createScript(zip,"main.min.js");
+                    /**
+                     * {
+                     * "renderMode":, //Engine rendering mode, "canvas" or "webgl"
+                     * "audioType": 0 //Use the audio type, 0: default, 2: web audio, 3: audio
+                     * "antialias": //Whether the anti-aliasing is enabled in WebGL mode, true: on, false: off, defaults to false
+                     * }
+                     **/
+                    egret.runEgret({ renderMode: "webgl", audioType: 2, calculateCanvasScaleFactor:function(context) {
+                        var backingStore = context.backingStorePixelRatio ||
+                            context.webkitBackingStorePixelRatio ||
+                            context.mozBackingStorePixelRatio ||
+                            context.msBackingStorePixelRatio ||
+                            context.oBackingStorePixelRatio ||
+                            context.backingStorePixelRatio || 1;
+                        return (window.devicePixelRatio || 1) / backingStore;
+                    }});
+                    
+	            });
+	        });
+	    }
+	    catch (e) {
+	        console.error("jszip解压文件报错，进行普通文件加载");
+	    }
+
+	    function loadZip(url,callBack) {
+	        var xhrZip = new XMLHttpRequest();
+	        xhrZip.open("GET", url, true);
+	        xhrZip.responseType = "arraybuffer";
+	        xhrZip.addEventListener("load", function (oEvent) {
+	            var arrayBuffer = xhrZip.response;
+	            if (!arrayBuffer) {
+	                console.log(url + "解析异常:" + xhrZip);
+	                throw new Error("zip异常");
+	            }
+	            callBack(new JSZip(arrayBuffer));
+	        });
+	        xhrZip.send(null);
+	    }
+
+	    function createScript(zip,file) {
+	        var text = zip.file(file).asText();
+	        var script = document.createElement("script");
+	        script.setAttribute("type", "text/javascript");
+	        script.text = text;
+	        document.body.appendChild(script);
+	        document.body.removeChild(script);
+	    }		
+
+        // var loadScript = function (list, callback) {
+        //     var loaded = 0;
+        //     var loadNext = function () {
+        //         loadSingleScript(list[loaded], function () {
+        //             loaded++;
+        //             if (loaded >= list.length) {
+        //                 callback();
+        //             }
+        //             else {
+        //                 loadNext();
+        //             }
+        //         })
+        //     };
+        //     loadNext();
+        // };
+
+        // var loadSingleScript = function (src, callback) {
+        //     var s = document.createElement('script');
+        //     s.async = false;
+        //     s.src = src;
+        //     s.addEventListener('load', function () {
+        //         s.parentNode.removeChild(s);
+        //         s.removeEventListener('load', arguments.callee, false);
+        //         callback();
+        //     }, false);
+        //     document.body.appendChild(s);
+        // };
+
+        // var xhr = new XMLHttpRequest();
+        // xhr.open('GET', './manifest.json?v=' + Math.random(), true);
+        // xhr.addEventListener("load", function () {
+        //     var manifest = JSON.parse(xhr.response);
+        //     var list = manifest.initial.concat(manifest.game);
+        //     loadScript(list, function () {
+        //         /**
+        //          * {
+        //          * "renderMode":, //Engine rendering mode, "canvas" or "webgl"
+        //          * "audioType": 0 //Use the audio type, 0: default, 2: web audio, 3: audio
+        //          * "antialias": //Whether the anti-aliasing is enabled in WebGL mode, true: on, false: off, defaults to false
+        //          * "calculateCanvasScaleFactor": //a function return canvas scale factor
+        //          * }
+        //          **/
+        //         egret.runEgret({ renderMode: "webgl", audioType: 0, calculateCanvasScaleFactor:function(context) {
+        //             var backingStore = context.backingStorePixelRatio ||
+        //                 context.webkitBackingStorePixelRatio ||
+        //                 context.mozBackingStorePixelRatio ||
+        //                 context.msBackingStorePixelRatio ||
+        //                 context.oBackingStorePixelRatio ||
+        //                 context.backingStorePixelRatio || 1;
+        //             return (window.devicePixelRatio || 1) / backingStore;
+        //         }});
+        //     });
+        // });
+        // xhr.send(null);
+    </script>
+</body>
+
+</html>

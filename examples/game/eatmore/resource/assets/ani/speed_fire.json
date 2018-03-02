@@ -1,0 +1,40 @@
+{"mc":{
+	"speed_fire":{
+		"frameRate":6,
+		"labels":[
+			{"name":"speed_fire","frame":1,"end":4}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"speed_fire0001",
+			"x":-31,
+			"y":-22
+			},
+			{
+			"res":"speed_fire0002",
+			"x":-38,
+			"y":-23
+			},
+			{
+			"res":"speed_fire0003",
+			"x":-40,
+			"y":-23
+			},
+			{
+			"res":"speed_fire0004",
+			"x":-41,
+			"y":-23
+			}
+			]
+}},
+	"res":{
+		"speed_fire0004":{"x":1,"y":1,"w":84,"h":47},
+		"speed_fire0003":{"x":87,"y":1,"w":82,"h":48},
+		"speed_fire0002":{"x":171,"y":1,"w":75,"h":47},
+		"speed_fire0001":{"x":1,"y":50,"w":65,"h":40}
+	}}

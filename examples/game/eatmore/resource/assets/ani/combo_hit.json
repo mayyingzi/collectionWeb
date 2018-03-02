@@ -1,0 +1,52 @@
+{"mc":{
+	"combo_hit":{
+		"frameRate":12,
+		"labels":[
+			{"name":"combo_hit","frame":1,"end":6}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"combohit0001",
+			"x":-59,
+			"y":-67
+			},
+			{
+			"res":"combohit0002",
+			"x":-54,
+			"y":-40
+			},
+			{
+			"res":"combohit0003",
+			"x":-60,
+			"y":-42
+			},
+			{
+			"res":"combohit0004",
+			"x":-62,
+			"y":-35
+			},
+			{
+			"res":"combohit0005",
+			"x":-25,
+			"y":-27
+			},
+			{
+			"res":"combohit0006",
+			"x":-38,
+			"y":-18
+			}
+			]
+}},
+	"res":{
+		"combohit0001":{"x":1,"y":1,"w":117,"h":127},
+		"combohit0005":{"x":186,"y":209,"w":66,"h":68},
+		"combohit0006":{"x":105,"y":209,"w":79,"h":59},
+		"combohit0004":{"x":120,"y":106,"w":104,"h":101},
+		"combohit0003":{"x":120,"y":1,"w":111,"h":103},
+		"combohit0002":{"x":1,"y":130,"w":102,"h":92}
+	}}

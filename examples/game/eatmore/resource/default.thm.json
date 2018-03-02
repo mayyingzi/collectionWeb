@@ -1,0 +1,10 @@
+{
+  "skins": {},
+  "autoGenerateExmlsList": true,
+  "exmls": [
+    {
+      "path": "resource/eui_skins/ui_battle.exml",
+      "content": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin class=\"SceneBattle\" width=\"741\" height=\"1316\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:w=\"http://ns.egret.com/wing\">\n\t<e:Image id=\"imgBG\" top=\"0\" bottom=\"0\" left=\"0\" right=\"0\" source=\"MapFloor_png\" fillMode=\"repeat\"/>\n\t<e:Rect height=\"88\" fillAlpha=\"0.5\" width=\"100%\" x=\"0\" bottom=\"0\"/>\n\t<e:Group id=\"groupMap\" width=\"741\" height=\"1140\" x=\"0\" verticalCenter=\"0\">\n\t</e:Group>\n\t<e:Group id=\"groupPlayer\" width=\"741\" height=\"1140\" x=\"0\" verticalCenter=\"0\"/>\n\t<e:Group id=\"groupGoldAni\" width=\"100%\" height=\"100%\" x=\"0\" y=\"0\"/>\n\t<e:Group id=\"groupTop\" x=\"0\" y=\"0\" width=\"100%\" height=\"88\">\n\t\t<e:Rect fillAlpha=\"0.5\" left=\"0\" right=\"0\" top=\"0\" bottom=\"0\"/>\n\t\t<e:Group x=\"23.35\" y=\"20\">\n\t\t\t<e:Rect width=\"369\" height=\"48\" x=\"0\" fillAlpha=\"0.3\" anchorOffsetX=\"0\" y=\"0\"/>\n\t\t\t<e:Image x=\"15.98\" source=\"coin_png\" width=\"30\" height=\"30\" verticalCenter=\"0\"/>\n\t\t\t<e:BitmapLabel id=\"topGold\" x=\"88.5\" font=\"font_coin_fnt\" text=\"123123o%\" verticalCenter=\"0\"/>\n\t\t</e:Group>\n\t\t<e:Group x=\"421.68\" y=\"20\">\n\t\t\t<e:Rect width=\"185\" height=\"48\" x=\"0\" fillAlpha=\"0.3\" anchorOffsetX=\"0\" y=\"0\"/>\n\t\t\t<e:Image x=\"13.32\" verticalCenter=\"0\" source=\"ZD_Icon_Shijian_png\"/>\n\t\t\t<e:Label id=\"labelTimer\" text=\"00:00\" x=\"67\" verticalCenter=\"0\"/>\n\t\t</e:Group>\n\t</e:Group>\n\t<e:Group id=\"groupTouch\" top=\"0\" bottom=\"0\" left=\"0\" right=\"0\" touchEnabled=\"true\">\n\t</e:Group>\n</e:Skin>"
+    }
+  ]
+}

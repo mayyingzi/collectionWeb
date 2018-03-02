@@ -1,0 +1,14 @@
+{"file":"font_coin.png","frames":{
+"%":{"x":67,"y":1,"w":30,"h":31,"offX":1,"offY":1,"sourceW":32,"sourceH":32},
+"+":{"x":97,"y":99,"w":27,"h":24,"offX":3,"offY":4,"sourceW":32,"sourceH":32},
+"0":{"x":1,"y":34,"w":30,"h":31,"offX":1,"offY":1,"sourceW":32,"sourceH":32},
+"1":{"x":99,"y":1,"w":28,"h":31,"offX":2,"offY":1,"sourceW":32,"sourceH":32},
+"2":{"x":1,"y":67,"w":30,"h":31,"offX":1,"offY":1,"sourceW":32,"sourceH":32},
+"3":{"x":65,"y":67,"w":30,"h":31,"offX":1,"offY":1,"sourceW":32,"sourceH":32},
+"4":{"x":34,"y":1,"w":31,"h":31,"offX":1,"offY":1,"sourceW":32,"sourceH":32},
+"5":{"x":65,"y":34,"w":30,"h":31,"offX":1,"offY":1,"sourceW":32,"sourceH":32},
+"6":{"x":33,"y":34,"w":30,"h":31,"offX":1,"offY":1,"sourceW":32,"sourceH":32},
+"7":{"x":1,"y":1,"w":31,"h":31,"offX":1,"offY":1,"sourceW":32,"sourceH":32},
+"8":{"x":97,"y":34,"w":30,"h":31,"offX":1,"offY":1,"sourceW":32,"sourceH":32},
+"9":{"x":33,"y":67,"w":30,"h":31,"offX":1,"offY":1,"sourceW":32,"sourceH":32},
+"o":{"x":97,"y":67,"w":30,"h":30,"offX":1,"offY":1,"sourceW":32,"sourceH":32}}}

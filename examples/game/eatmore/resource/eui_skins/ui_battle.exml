@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SceneBattle" width="741" height="1316" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgBG" top="0" bottom="0" left="0" right="0" source="MapFloor_png" fillMode="repeat"/>
+	<e:Rect height="88" fillAlpha="0.5" width="100%" x="0" bottom="0"/>
+	<e:Group id="groupMap" width="741" height="1140" x="0" verticalCenter="0">
+	</e:Group>
+	<e:Group id="groupPlayer" width="741" height="1140" x="0" verticalCenter="0"/>
+	<e:Group id="groupGoldAni" width="100%" height="100%" x="0" y="0"/>
+	<e:Group id="groupTop" x="0" y="0" width="100%" height="88">
+		<e:Rect fillAlpha="0.5" left="0" right="0" top="0" bottom="0"/>
+		<e:Group x="23.35" y="20">
+			<e:Rect width="369" height="48" x="0" fillAlpha="0.3" anchorOffsetX="0" y="0"/>
+			<e:Image x="15.98" source="coin_png" width="30" height="30" verticalCenter="0"/>
+			<e:BitmapLabel id="topGold" x="88.5" font="font_coin_fnt" text="123123o%" verticalCenter="0"/>
+		</e:Group>
+		<e:Group x="421.68" y="20">
+			<e:Rect width="185" height="48" x="0" fillAlpha="0.3" anchorOffsetX="0" y="0"/>
+			<e:Image x="13.32" verticalCenter="0" source="ZD_Icon_Shijian_png"/>
+			<e:Label id="labelTimer" text="00:00" x="67" verticalCenter="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="groupTouch" top="0" bottom="0" left="0" right="0" touchEnabled="true">
+	</e:Group>
+</e:Skin>

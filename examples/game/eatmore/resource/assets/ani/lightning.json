@@ -1,0 +1,58 @@
+{"mc":{
+	"lightning":{
+		"frameRate":5,
+		"labels":[
+			{"name":"lightning","frame":1,"end":7}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"Electric_hold0001",
+			"x":-18,
+			"y":-20
+			},
+			{
+			"res":"Electric_hold0002",
+			"x":-32,
+			"y":-38
+			},
+			{
+			"res":"Electric_hold0003",
+			"x":-34,
+			"y":-30
+			},
+			{
+			"res":"Electric_hold0004",
+			"x":-30,
+			"y":-28
+			},
+			{
+			"res":"Electric_hold0005",
+			"x":-29,
+			"y":-20
+			},
+			{
+			"res":"Electric_hold0006",
+			"x":-30,
+			"y":-20
+			},
+			{
+			"res":"Electric_hold0007",
+			"x":-28,
+			"y":-20
+			}
+			]
+}},
+	"res":{
+		"Electric_hold0006":{"x":1,"y":141,"w":54,"h":57},
+		"Electric_hold0001":{"x":57,"y":187,"w":36,"h":54},
+		"Electric_hold0002":{"x":1,"y":67,"w":56,"h":72},
+		"Electric_hold0007":{"x":75,"y":1,"w":46,"h":62},
+		"Electric_hold0003":{"x":1,"y":1,"w":72,"h":64},
+		"Electric_hold0004":{"x":59,"y":67,"w":64,"h":62},
+		"Electric_hold0005":{"x":59,"y":131,"w":59,"h":54}
+	}}

@@ -1,0 +1,58 @@
+{"mc":{
+	"transfer_fire":{
+		"frameRate":12,
+		"labels":[
+			{"name":"transfer_fire","frame":1,"end":7}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"Transfer_fire0001",
+			"x":-60,
+			"y":-58
+			},
+			{
+			"res":"Transfer_fire0002",
+			"x":-64,
+			"y":-62
+			},
+			{
+			"res":"Transfer_fire0003",
+			"x":-64,
+			"y":-62
+			},
+			{
+			"res":"Transfer_fire0004",
+			"x":-54,
+			"y":-40
+			},
+			{
+			"res":"Transfer_fire0005",
+			"x":-53,
+			"y":-44
+			},
+			{
+			"res":"Transfer_fire0006",
+			"x":-50,
+			"y":-46
+			},
+			{
+			"res":"Transfer_fire0007",
+			"x":-49,
+			"y":-44
+			}
+			]
+}},
+	"res":{
+		"Transfer_fire0001":{"x":1,"y":127,"w":115,"h":115},
+		"Transfer_fire0007":{"x":89,"y":285,"w":84,"h":85},
+		"Transfer_fire0002":{"x":127,"y":1,"w":124,"h":124},
+		"Transfer_fire0005":{"x":118,"y":127,"w":106,"h":80},
+		"Transfer_fire0006":{"x":1,"y":244,"w":86,"h":87},
+		"Transfer_fire0004":{"x":118,"y":209,"w":107,"h":74},
+		"Transfer_fire0003":{"x":1,"y":1,"w":124,"h":124}
+	}}

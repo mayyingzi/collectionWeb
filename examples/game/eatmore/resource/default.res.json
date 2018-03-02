@@ -1,0 +1,240 @@
+{
+	"groups": [
+		{
+			"keys": "description_json,MapBlock_png,MapFloor_png,MapMonsterHouse_png,ZD_Icon_Jiantou_png,ZD_Icon_Jinbi_png,ZD_Icon_Yihuo_png,monster_json,monster_png,player_json,player_png,transfer_json,transfer_png,coin_png,crystal_json,crystal_png,lightning_png,lightning_json,transfer_fire_json,transfer_fire_png,font_coin_png,font_coin_fnt,Transition02_png,gold_json,gold_png,BtnEff_mp3,CountDownEff_mp3,GameBg_mp3,GameOver_mp3,ItemBonus_mp3,ItemDiamond_mp3,ItemGold_mp3,ItemLighting_mp3,MapTeleporter_mp3,MonsterDie_mp3,NextLevel_mp3,PlayerDie_mp3,ZD_Icon_Shijian_png,preloading_gif,font_fnt,font_png,combo_hit_json,combo_hit_png,NullSound_mp3,speed_fire_json,speed_fire_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "assets/image/MapBlock.png",
+			"type": "image",
+			"name": "MapBlock_png"
+		},
+		{
+			"url": "assets/image/MapFloor.png",
+			"type": "image",
+			"name": "MapFloor_png"
+		},
+		{
+			"url": "assets/image/MapMonsterHouse.png",
+			"type": "image",
+			"name": "MapMonsterHouse_png"
+		},
+		{
+			"url": "assets/image/ZD_Icon_Jiantou.png",
+			"type": "image",
+			"name": "ZD_Icon_Jiantou_png"
+		},
+		{
+			"url": "assets/image/ZD_Icon_Jinbi.png",
+			"type": "image",
+			"name": "ZD_Icon_Jinbi_png"
+		},
+		{
+			"url": "assets/image/ZD_Icon_Yihuo.png",
+			"type": "image",
+			"name": "ZD_Icon_Yihuo_png"
+		},
+		{
+			"url": "assets/ani/monster.json",
+			"type": "json",
+			"name": "monster_json"
+		},
+		{
+			"url": "assets/ani/monster.png",
+			"type": "image",
+			"name": "monster_png"
+		},
+		{
+			"url": "assets/ani/player.json",
+			"type": "json",
+			"name": "player_json"
+		},
+		{
+			"url": "assets/ani/player.png",
+			"type": "image",
+			"name": "player_png"
+		},
+		{
+			"url": "assets/ani/transfer.json",
+			"type": "json",
+			"name": "transfer_json"
+		},
+		{
+			"url": "assets/ani/transfer.png",
+			"type": "image",
+			"name": "transfer_png"
+		},
+		{
+			"url": "assets/image/coin.png",
+			"type": "image",
+			"name": "coin_png"
+		},
+		{
+			"url": "assets/ani/crystal.json",
+			"type": "json",
+			"name": "crystal_json"
+		},
+		{
+			"url": "assets/ani/crystal.png",
+			"type": "image",
+			"name": "crystal_png"
+		},
+		{
+			"url": "assets/ani/lightning.png",
+			"type": "image",
+			"name": "lightning_png"
+		},
+		{
+			"url": "assets/ani/lightning.json",
+			"type": "json",
+			"name": "lightning_json"
+		},
+		{
+			"url": "assets/ani/transfer_fire.json",
+			"type": "json",
+			"name": "transfer_fire_json"
+		},
+		{
+			"url": "assets/ani/transfer_fire.png",
+			"type": "image",
+			"name": "transfer_fire_png"
+		},
+		{
+			"url": "assets/font/font_coin.png",
+			"type": "image",
+			"name": "font_coin_png"
+		},
+		{
+			"url": "assets/font/font_coin.fnt",
+			"type": "font",
+			"name": "font_coin_fnt"
+		},
+		{
+			"url": "assets/image/Transition02.png",
+			"type": "image",
+			"name": "Transition02_png"
+		},
+		{
+			"url": "assets/ani/gold.json",
+			"type": "json",
+			"name": "gold_json"
+		},
+		{
+			"url": "assets/ani/gold.png",
+			"type": "image",
+			"name": "gold_png"
+		},
+		{
+			"url": "assets/afx/BtnEff.mp3",
+			"type": "sound",
+			"name": "BtnEff_mp3"
+		},
+		{
+			"url": "assets/afx/CountDownEff.mp3",
+			"type": "sound",
+			"name": "CountDownEff_mp3"
+		},
+		{
+			"url": "assets/afx/GameBg.mp3",
+			"type": "sound",
+			"name": "GameBg_mp3"
+		},
+		{
+			"url": "assets/afx/GameOver.mp3",
+			"type": "sound",
+			"name": "GameOver_mp3"
+		},
+		{
+			"url": "assets/afx/ItemBonus.mp3",
+			"type": "sound",
+			"name": "ItemBonus_mp3"
+		},
+		{
+			"url": "assets/afx/ItemDiamond.mp3",
+			"type": "sound",
+			"name": "ItemDiamond_mp3"
+		},
+		{
+			"url": "assets/afx/ItemGold.mp3",
+			"type": "sound",
+			"name": "ItemGold_mp3"
+		},
+		{
+			"url": "assets/afx/ItemLighting.mp3",
+			"type": "sound",
+			"name": "ItemLighting_mp3"
+		},
+		{
+			"url": "assets/afx/MapTeleporter.mp3",
+			"type": "sound",
+			"name": "MapTeleporter_mp3"
+		},
+		{
+			"url": "assets/afx/MonsterDie.mp3",
+			"type": "sound",
+			"name": "MonsterDie_mp3"
+		},
+		{
+			"url": "assets/afx/NextLevel.mp3",
+			"type": "sound",
+			"name": "NextLevel_mp3"
+		},
+		{
+			"url": "assets/afx/PlayerDie.mp3",
+			"type": "sound",
+			"name": "PlayerDie_mp3"
+		},
+		{
+			"url": "assets/preloading.gif",
+			"type": "image",
+			"name": "preloading_gif"
+		},
+		{
+			"url": "assets/image/ZD_Icon_Shijian.png",
+			"type": "image",
+			"name": "ZD_Icon_Shijian_png"
+		},
+		{
+			"url": "assets/font/font.fnt",
+			"type": "font",
+			"name": "font_fnt"
+		},
+		{
+			"url": "assets/font/font.png",
+			"type": "image",
+			"name": "font_png"
+		},
+		{
+			"url": "assets/ani/speed_fire.json",
+			"type": "json",
+			"name": "speed_fire_json"
+		},
+		{
+			"url": "assets/ani/speed_fire.png",
+			"type": "image",
+			"name": "speed_fire_png"
+		},
+		{
+			"url": "assets/afx/NullSound.mp3",
+			"type": "sound",
+			"name": "NullSound_mp3"
+		},
+		{
+			"url": "assets/ani/combo_hit.json",
+			"type": "json",
+			"name": "combo_hit_json"
+		},
+		{
+			"url": "assets/ani/combo_hit.png",
+			"type": "image",
+			"name": "combo_hit_png"
+		}
+	]
+}
