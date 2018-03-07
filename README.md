@@ -746,7 +746,8 @@
 - 模拟app页面切换转场：交互动效
 - 使用rem自适应页面
 - styule预编译样式工具
-
+- [权限设置：根据用户权限，动态添加路由， 借助，router.addRoutes(addRoutesArray)](https://github.com/mgbq/vue-permission)
+	- 参考demo [https://github.com/mgbq/vue-permission](https://github.com/mgbq/vue-permission)
 
 
 	
