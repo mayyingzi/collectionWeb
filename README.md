@@ -93,6 +93,7 @@
 		- Shadowsocks
 		- Lantern
 		- Proxifier
+		- xx-net 推荐使用的免费稳定的翻墙软件（原理：代理 ，使用ipv6）	
 	- chrome常用插件
 		- 掘金： 为设计师、程序员、产品每日发现优质的内容
 		- 谷歌访问助手： 解决chrome扩展无法自动更新问题，同时可以访问google搜索，gmail邮箱，google+等谷歌服务
