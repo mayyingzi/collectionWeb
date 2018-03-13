@@ -207,6 +207,9 @@
 - 本地址配置一个http文件服务器
 	- anywhere
 	- http-server
+	- 使用ngnix
+- 穿透内网方向代理
+	- [ngrok](https://ngrok.com/product)
 - 前端性能分析
 	- css性能分析
 		- [https://csstriggers.com/](https://csstriggers.com/)
