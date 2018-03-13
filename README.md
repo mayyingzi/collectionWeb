@@ -111,6 +111,14 @@
 			- chrome://inspect/#devices
 		- 模拟器（**目前夜神模拟器&BlueStacks，在chrome上可以检测到 设备**）打开页面，chrome Remote Debugging 检测
 		- [UC浏览器访问调试 http://plus.uc.cn/document/webapp/doc5.html](http://plus.uc.cn/document/webapp/doc5.html)
+		- app嵌入web，调试方法总结
+			- 安卓机调试（真机）
+				- app开启调试模式
+				- 手机设置为：开发着模式
+				- 手机与电脑链接数据线
+				- chrome浏览器（需翻墙：推荐使用 xx-net翻墙工具）：访问 chrome://inspect/#devices， 查看当前检测到的设备，点击inspect 访问页面
+			- 夜深模拟器，安卓端：最好是用低版本，否则chrome检测不到访问的web，推荐版本 3.7.1.0
+				- chrome浏览器，打开移动设备检测页面（同安卓真机调试相同）
 	- 常用开发编辑器
 		- vscode: 各种扩展，推荐使用
 			- 手动安装插件(具体教程链接  http://blog.csdn.net/wangwei703/article/details/54020712)
