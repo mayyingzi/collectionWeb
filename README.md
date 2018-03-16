@@ -1,4 +1,5 @@
 ## collection everyday
+- [高德地图api](http://lbs.amap.com/api/javascript-api/summary/)
 - [前端模块化：CommonJS,AMD,CMD,ES6](https://juejin.im/post/5aaa37c8f265da23945f365c)
 - [前端常逛网站推荐](https://www.zhihu.com/question/28478379)
 - [vue使用百度地图插件](https://dafrok.github.io/vue-baidu-map/#/)
