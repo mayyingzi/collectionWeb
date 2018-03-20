@@ -1,4 +1,5 @@
 ## collection everyday
+- [高德地图api](http://lbs.amap.com/api/javascript-api/summary/)
 - [前端模块化：CommonJS,AMD,CMD,ES6](https://juejin.im/post/5aaa37c8f265da23945f365c)
 - [前端常逛网站推荐](https://www.zhihu.com/question/28478379)
 - [vue使用百度地图插件](https://dafrok.github.io/vue-baidu-map/#/)
@@ -120,7 +121,7 @@
 				- 手机设置为：开发着模式
 				- 手机与电脑链接数据线
 				- chrome浏览器（需翻墙：推荐使用 xx-net翻墙工具）：访问 chrome://inspect/#devices， 查看当前检测到的设备，点击inspect 访问页面
-			- 夜深模拟器，安卓端：最好是用低版本，否则chrome检测不到访问的web，推荐版本 3.7.1.0
+			- 夜深模拟器，安卓端：最好是用低版本，否则chrome检测不到访问的web，推荐版本 3.7.1.0，3.8.3.1
 				- chrome浏览器，打开移动设备检测页面（同安卓真机调试相同）
 	- 常用开发编辑器
 		- vscode: 各种扩展，推荐使用
