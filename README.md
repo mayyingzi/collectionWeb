@@ -11,6 +11,7 @@
 - [react 学习指南](https://juejin.im/entry/5a6f237b6fb9a01cbd58dd9d?utm_source=gold_browser_extension)
 - [react 中文文档官网](https://doc.react-china.org/)
 - [vue 组件缓存处理插件：vue-navigation](https://www.zhihu.com/question/51948961)
+- [vue 常用优化手段](https://segmentfault.com/a/1190000014085613)
 - [js处理唤起本地app方式总结](https://segmentfault.com/a/1190000012940046)
 - [Fundebug 全栈JavaScript错误实时监控平台,用户应用出现错误是，通过邮件或者第三方工具发送警告给开发者](https://docs.fundebug.com/)
 - [vue理解与学习（推荐）](https://juejin.im/entry/5a54b747518825734216c3df?utm_source=gold_browser_extension)
