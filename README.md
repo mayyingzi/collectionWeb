@@ -1,5 +1,8 @@
 ## collection everyday
 - [高德地图api](http://lbs.amap.com/api/javascript-api/summary/)
+- [vue开发移动端项目总结**（推荐）**](https://zhuanlan.zhihu.com/p/32601637)
+- [vue移动端UI框架](https://github.com/airyland/vux)
+- [移动端开发辅助调试工具VConsole **(推荐)**](https://github.com/Tencent/vConsole)
 - [git的使用操作(!**推荐**)](https://juejin.im/post/5abef8356fb9a028df22bd78)
 - [理解this和闭包](https://juejin.im/entry/5ac21eb8f265da2392368433?utm_source=gold_browser_extension)
 - [前端模块化：CommonJS,AMD,CMD,ES6](https://juejin.im/post/5aaa37c8f265da23945f365c)
