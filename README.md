@@ -759,6 +759,7 @@
 	- 任务队列
 		- 同步任务：在主线程上排队执行的任务，只有前一个任务执行完毕，才会执行后一个任务
 		- 异步任务：不进入主线程、而进入任务队列，只有‘任务队列’通知主线程，某个一部任务可以执行了，该任务才会进入主线程
+- [企业查询【天眼查】]( http://tianyancha.com )
 
 # 个人开发项目打包预览
 ## [**vue-demo-profile**: vue项目搭建模板，主要处理功能](https://mayyingzi.github.io/collectionWeb/examples/vue-demo-profile)
