@@ -1,5 +1,7 @@
 ## collection everyday
 - [高德地图api](http://lbs.amap.com/api/javascript-api/summary/)
+- [SwitchHosts 快速切换hosts](https://github.com/oldj/SwitchHosts)
+- [TeamViewer 远程桌面解决方案:连接远程计算机,提供远程支持和在线协作](https://www.teamviewer.com/zhCN/)
 - [前百度云盘他人资料分享](https://segmentfault.com/a/1190000014332276)
 - [vue开发移动端项目总结**（推荐）**](https://zhuanlan.zhihu.com/p/32601637)
 - [vue移动端UI框架](https://github.com/airyland/vux)
