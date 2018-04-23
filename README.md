@@ -1,5 +1,7 @@
 ## collection everyday
 - [高德地图api](http://lbs.amap.com/api/javascript-api/summary/)
+- [不错的下拉刷新，上滑加载更多插件推荐 mescroll](https://www.npmjs.com/package/mescroll.js)
+- [react 学习项目](https://github.com/cd-dongzi/react-toutiao)
 - [SwitchHosts 快速切换hosts](https://github.com/oldj/SwitchHosts)
 - [TeamViewer 远程桌面解决方案:连接远程计算机,提供远程支持和在线协作](https://www.teamviewer.com/zhCN/)
 - [前百度云盘他人资料分享](https://segmentfault.com/a/1190000014332276)
