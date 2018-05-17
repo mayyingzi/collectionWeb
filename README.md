@@ -1,5 +1,10 @@
 ## collection everyday
+- 前端富文本编辑器推荐
+	- [wangEidtor 较轻量web富文本编辑器](http://www.wangeditor.com/)：目前正在开发中使用，踩坑后续补充
+- [关于input的一些问题解决方法分享](https://segmentfault.com/a/1190000014843602)
+- [vue添加环境变量常量--多环境打包解决之一](https://juejin.im/entry/5afd429b51882542714ff881?utm_source=gold_browser_extension)
 - [高德地图api](http://lbs.amap.com/api/javascript-api/summary/)
+- [Antd design](http://ant.design/index-cn)
 - [不错的下拉刷新，上滑加载更多插件推荐 mescroll](https://www.npmjs.com/package/mescroll.js)
 - [react 学习项目](https://github.com/cd-dongzi/react-toutiao)
 - [SwitchHosts 快速切换hosts](https://github.com/oldj/SwitchHosts)
@@ -7,7 +12,10 @@
 - [前百度云盘他人资料分享](https://segmentfault.com/a/1190000014332276)
 - [vue开发移动端项目总结**（推荐）**](https://zhuanlan.zhihu.com/p/32601637)
 - [vue移动端UI框架](https://github.com/airyland/vux)
-- [移动端开发辅助调试工具VConsole **(推荐)**](https://github.com/Tencent/vConsole)
+- 移动端开发辅助调试工具**推荐**
+	- [vConsole](https://github.com/Tencent/vConsole)
+	- [Eruda](https://github.com/liriliri/eruda/blob/master/doc/README_CN.md)
+		- 同vConsole类似
 - [git的使用操作(!**推荐**)](https://juejin.im/post/5abef8356fb9a028df22bd78)
 - [理解this和闭包](https://juejin.im/entry/5ac21eb8f265da2392368433?utm_source=gold_browser_extension)
 - [前端模块化：CommonJS,AMD,CMD,ES6](https://juejin.im/post/5aaa37c8f265da23945f365c)
