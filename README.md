@@ -1,4 +1,16 @@
 ## collection everyday
+- js处理cookie，删除所有**兼容ios 微信浏览器**
+	- ```
+		var clearAll = function() {
+			// FIXME:微信兼容 ,路径必须设置&日期设置为0
+			var keys = document.cookie.match(/[^ =;]+(?=\=)/g);  
+			if(keys) {
+				for(var i = keys.length; i--;){
+					document.cookie = keys[i] + '=0;expires=' + new Date(0).toUTCString()+"; path=/";
+				}
+			};
+		}
+	- ```bash
 - 前端富文本编辑器推荐
 	- [wangEidtor 较轻量web富文本编辑器](http://www.wangeditor.com/)：目前正在开发中使用，踩坑后续补充
 - [关于input的一些问题解决方法分享](https://segmentfault.com/a/1190000014843602)
