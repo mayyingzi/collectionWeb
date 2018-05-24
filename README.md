@@ -1,18 +1,20 @@
 ## collection everyday
 - js处理cookie，删除所有**兼容ios 微信浏览器**
-	- ```
-		var clearAll = function() {
-			// FIXME:微信兼容 ,路径必须设置&日期设置为0
-			var keys = document.cookie.match(/[^ =;]+(?=\=)/g);  
-			if(keys) {
-				for(var i = keys.length; i--;){
-					document.cookie = keys[i] + '=0;expires=' + new Date(0).toUTCString()+"; path=/";
-				}
-			};
-		}
-	- ```bash
+    - ```
+        var clearAll = function() {
+            // FIXME:微信兼容 ,路径必须设置&日期设置为0
+            var keys = document.cookie.match(/[^ =;]+(?=\=)/g);
+            if(keys) {
+                for(var i = keys.length; i--;){
+                    document.cookie = keys[i] + '=0;expires=' + new Date(0).toUTCString()+"; path=/";
+                }
+            };
+        }
+    - ```bash
+- [vue 服务端渲染框架-Nuxt.js](https://zh.nuxtjs.org/guide)
 - 前端富文本编辑器推荐
-	- [wangEidtor 较轻量web富文本编辑器](http://www.wangeditor.com/)：目前正在开发中使用，踩坑后续补充
+    - [wangEidtor 较轻量web富文本编辑器](http://www.wangeditor.com/)：目前正在开发中使用，踩坑后续补充
+- [webpack 深入浅出](http://webpack.wuhaolin.cn/)
 - [关于input的一些问题解决方法分享](https://segmentfault.com/a/1190000014843602)
 - [vue添加环境变量常量--多环境打包解决之一](https://juejin.im/entry/5afd429b51882542714ff881?utm_source=gold_browser_extension)
 - [高德地图api](http://lbs.amap.com/api/javascript-api/summary/)
@@ -62,7 +64,7 @@
 - [fis3帮助文档]( http://fis.baidu.com/fis3/docs/beginning/release.html)
 - [常用数据可视化技术栈](https://www.zhihu.com/question/19929609)
 - [打造自己的JavaScript武器库](https://juejin.im/post/5a091afe6fb9a044ff30f402?utm_source=gold_browser_extension)
-- [Ramda 函数库 function first，data last](http://www.ruanyifeng.com/blog/2017/03/ramda.html) 
+- [Ramda 函数库 function first，data last](http://www.ruanyifeng.com/blog/2017/03/ramda.html)
 - [gulp babel 处理提示 exports is not defined](https://github.com/JeremyEnglert/JointsWP/issues/249)
 - electron（桌面应用开发）
 	- 官网 https://electron.atom.io/
@@ -70,7 +72,7 @@
 	- 学习教程 https://www.w3cschool.cn/electronmanual/
 		- [ demo https://github.com/k-water/electron-filesystem](https://github.com/k-water/electron-filesystem)
 - 银联开发学习
-	- [http://www.cnblogs.com/abcwt112/p/4768390.html](http://www.cnblogs.com/abcwt112/p/4768390.html)	
+	- [http://www.cnblogs.com/abcwt112/p/4768390.html](http://www.cnblogs.com/abcwt112/p/4768390.html)
 	- 银联商家技术服务官网
 		- https://open.unionpay.com/ajweb/help/apiTool?cateid=38
 - 支付宝支付开发
@@ -87,18 +89,18 @@
 	- [WebGL：打开网页看大片 https://segmentfault.com/a/1190000011633728](https://segmentfault.com/a/1190000011633728)
 - 微信小程序开发
 	- api官网
-	- 模块化开发	
+	- 模块化开发
 		- [https://segmentfault.com/a/1190000008094596](https://segmentfault.com/a/1190000008094596)
-		- [https://github.com/maichong/labrador（推荐使用）](https://github.com/maichong/labrador)	
+		- [https://github.com/maichong/labrador（推荐使用）](https://github.com/maichong/labrador)
 		- [https://github.com/wepyjs/wepy](https://github.com/wepyjs/wepy)
 - 前端开发常用工具整理
 	- 测试辅助工具
 		- 原生嵌入h5
 			- 模拟器
 				- **安卓**
-					- 夜神模拟器 
+					- 夜神模拟器
 					- 海马玩模拟器
-					- BlueStacks(有点笨重，不推荐使用) 
+					- BlueStacks(有点笨重，不推荐使用)
 				- **ios**
 					- iPadian（感觉不好用）
 			- 抓包，代理
@@ -121,14 +123,14 @@
 	- UI常用工具
 		- ps
 		- MarkMan：开速标注
-		- FastStone Capture（红绿工具）		
+		- FastStone Capture（红绿工具）
  	- 视频录制（每帧可编辑）
  		- ScreenToGif
 	- 翻墙工具
 		- Shadowsocks
 		- Lantern
 		- Proxifier
-		- [xx-net 推荐使用的免费稳定的翻墙软件（原理：代理 ，使用ipv6）](https://github.com/XX-net/XX-Net)	
+		- [xx-net 推荐使用的免费稳定的翻墙软件（原理：代理 ，使用ipv6）](https://github.com/XX-net/XX-Net)
 	- chrome常用插件
 		- 掘金： 为设计师、程序员、产品每日发现优质的内容
 		- 谷歌访问助手： 解决chrome扩展无法自动更新问题，同时可以访问google搜索，gmail邮箱，google+等谷歌服务
@@ -159,18 +161,18 @@
 			- 手动安装插件(具体教程链接  http://blog.csdn.net/wangwei703/article/details/54020712)
 			- 下载链接配置
 					https:// ${publisher}.gallery.vsassets.io/_apis/public/gallery/publisher/${publisher}/extension/${extension name}/${version}/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage
-				
+
 					插件介绍链接页： https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome
-				
+
 					${publisher} ：msjsdiag
-				
+
 					${version}：页面版本信息（eg: 1.0.0）
-				
+
 					${extension name}: debugger-for-chrome
-		
+
 					修改下载的扩展插件名为(后缀一定是.visx)  extension name.visx
-		
-					本地cmd.exe安装指令		
+
+					本地cmd.exe安装指令
 					code --install-extension debugger-for-chrome.visx
 
 			- vscode常用插件
@@ -205,7 +207,7 @@
 				- 查看远程仓库： git remote -v
 				- 添加远程仓库到本地: git remote add [name] [url]
 				- 删除远程仓库： git remote rm [name]
-				- git branch, git status, git merge 
+				- git branch, git status, git merge
 				- 冲突处理步骤
 					- 手动处理conflict
 						- 使用Git时，在pull、merge、rebase的过程中，遇到conflict时，以上处理过程会终端，并且命令行中显示（xxx|MERGING）的状态（Windows下Git Bash中显示的状态），经常会遇到conflict的情况：
@@ -226,7 +228,7 @@
 		1. 删除IE内容里的证书
 		2. 删除：C:\Users\<UserName>\AppData\Roaming\Microsoft\Crypto\RSA\  （**这个路径下的文件就行了。不过我建议大家先备份里面的文件，否则出了问题，则无法恢复**）
 		3. 执行命令（cd 到fiddler安装目录）：cd d:\Program Files\Fiddler
-		
+
 				makecert.exe -r -ss my -n "CN=DO_NOT_TRUST_FiddlerRoot, O=DO_NOT_TRUST, OU=Created by http://www.fiddler2.com" -sky signature -eku 1.3.6.1.5.5.7.3.1 -h 1 -cy authority -a sha1 -m 120 -b 09/05/2012
 
 	- [配置手机抓包https教程](http://blog.csdn.net/songer_xing/article/details/53841401)
@@ -237,7 +239,7 @@
 	- 其他优秀教程推荐
 		- http://blog.csdn.net/htdeyanlei/article/details/52874248
 		- http://blog.csdn.net/wangjun5159/article/details/52202059
-	
+
 
 - 本地址配置一个http文件服务器
 	- anywhere
@@ -254,21 +256,21 @@
 	- [http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 - 图片压缩
 	- [gulp-tinypng-compress https://tinypng.com/developers](https://tinypng.com/developers)
-- webpack学习地址	
+- webpack学习地址
 	- https://github.com/slashhuang/blog/issues/1
 	- https://www.zhihu.com/question/39290543
 
-- css写各种常用的icon（强烈推荐）	
+- css写各种常用的icon（强烈推荐）
 	- [http://cssicon.space/#/icon/snow](http://cssicon.space/#/icon/snow)
-- iconfont文字icon	
+- iconfont文字icon
 	- http://lib.h-ui.net/Hui-iconfont/1.0.7/demo.html
 	- http://fontawesome.dashgame.com/
 
-- 一些不错的UI成套组件库	
+- 一些不错的UI成套组件库
 	- [sui 就是css的写法有些老  http://m.sui.taobao.org/](http://m.sui.taobao.org/)
 	- [weiui 一套贴合微信开发的UI组件    https://mp.weixin.qq.com/wiki/2/ae9782fb42e47ad79eb7b361c2149d16.html](https://mp.weixin.qq.com/wiki/2/ae9782fb42e47ad79eb7b361c2149d16.html)
 
-- [web中的url中的http协议与https，相对协议地址](https://segmentfault.com/q/1010000000368868)	
+- [web中的url中的http协议与https，相对协议地址](https://segmentfault.com/q/1010000000368868)
 
 - [e6箭头函数使用说明](https://segmentfault.com/a/1190000010946164)
 - 各种学习视频
@@ -280,84 +282,84 @@
 - 书单
 
 		/**书单 （s 11:14 2016/4/21）**/
-		
+
 		《javascript高级程序设计》
-		
+
 		《javascript权威指南》
-		
+
 		/**书单 （e 11:14 2016/4/21）**/
 
 - gulp + webpack 构建多页面前端项目
 
-		1、[微信调试](http://mp.weixin.qq.com/wiki/10/e5f772f4521da17fa0d7304f68b97d7e.html)	
-		
+		1、[微信调试](http://mp.weixin.qq.com/wiki/10/e5f772f4521da17fa0d7304f68b97d7e.html)
+
 			（1）wxdebugger_0.4.0_x64.exe  微信开发着工具 模拟微信客户端
 				http://mp.weixin.qq.com/wiki/10/e5f772f4521da17fa0d7304f68b97d7e.html#.E4.B8.8B.E8.BD.BD.E5.9C.B0.E5.9D.80
-			
+
 			（2）fiddler 抓包工具
-			
+
 			（3） http://blog.qqbrowser.cc/kai-qi-wang-ye-diao-shi-jiao-cheng/
-		
-			
+
+
 		2、Chair是支付宝前端团队推出的，基于Node.js的Web框架，适用于大部分的Web应用
-		
+
 		http://www.html5cn.org/article-9285-1.html   开启网页调试教程   （微信调试工具）
 
 
 - node.js学习（http://www.runoob.com/nodejs/nodejs-repl.html）
 
 		常用指令:
-		
+
 		查看当前node的版本		node -v
-		
+
 		查看npm的版本			npm -v
-		
+
 		nmp升级版本			npm install npm -g
-		
-		npm安装Node.js模块语法		npm install 模块名称（例如：express） 
-		
+
+		npm安装Node.js模块语法		npm install 模块名称（例如：express）
+
 		本地安装与全局安装：
-		
-		本地安装（即项目当前环境）	npm install 模块名称   
-		
-		全局安装（window）		npm install 模块名称  -g   
-		
+
+		本地安装（即项目当前环境）	npm install 模块名称
+
+		全局安装（window）		npm install 模块名称  -g
+
 		全局安装模块查看		npm ls -g
-		
+
 		Node.js模块卸载			npm uninstall 模块名称
-		
+
 		模块更新			npm update 模块名称
-		
+
 		搜索模块			npm search 模块名称
-		
+
 		创建模块package.json		npm init
-		
+
 		Jade 是 Node 的一个模板引擎，一句话就是让我们能够更快更简便地写HTML
 		$ npm install jade -g
-		
-		
-		
+
+
+
 		artTemplate前端模板引擎
-		
-		
-		gulp插件命安装，并写入package 
+
+
+		gulp插件命安装，并写入package
 
 					npm install --save-dev 插件名称
 
 		gulp 插件  http://www.cnblogs.com/2050/p/4198792.html
 
-		https://github.com/fmal/gulp-inline-source    gulp-inline-source 
+		https://github.com/fmal/gulp-inline-source    gulp-inline-source
 		Inline all <script>, <link> and <img> tags that contain the inline attribute with inline-source.
 - JSON.parse()和JSON.stringify()
 
 	（1）JSON.parse()   从一字符串中解析出json对象
-	
+
 	例如：var srt="{"name":"name_text","age":"18"}";
 
-		JSON.parse(str); 
-	
+		JSON.parse(str);
+
 	Object
-	
+
 		age:"18",
 
 		name: "name_text"
@@ -369,13 +371,13 @@
 	例如： var a={a:1,b:2};
 
 	JSON.stringify(a);
-	
+
 	结果：
 
 	"{"a":"1","b":"2"}"
 
 - React  学习
-	
+
 	(1) 一个简单demo
 
 		https://github.com/ruanyf/react-demos
@@ -384,18 +386,18 @@
 - MVC框架  http://www.csdn.net/article/2014-08-27/2821409-javascript-framework-comparison
 
 	（1） AngularJS
-	
+
 		（two-way）双向数据绑定，HTML扩展能力
 		http://www.ngnice.com/
 
 	（2） Backbone.js
-		
+
 		轻量级的MVC框架
-		
+
 		https://github.com/Maluen/Backbone-Debugger        backbone的dubug调试工具
-	
+
 		推荐学习网站API http://www.css88.com/doc/backbone/
-		
+
 		今日学习 http://www.css88.com/doc/backbone/#Model
 
 	（3） Ember.js
@@ -430,7 +432,7 @@
 
 	总结：
 		（1）减少链接数
-	
+
 		（2）防止出现外部调用css，js没有加载完毕的问题出现
 
 		（3）重要的栏目或者说叫分类、频道什么的这种的首页才这样做，首页的访问量大，可以减少连接数，也可以防止css没有加载完毕出现页面乱的现象，用户体验好
@@ -440,7 +442,7 @@
 
 
 - chorm 调试学习
-	
+
 	http://umaar.github.io/devtools-animated-2016/#/88
 
 	http://blog.csdn.net/freshlover/article/details/42528643
@@ -480,10 +482,10 @@
 
 - 百度H5 http://h5.baidu.com/
 
-- expressJs学习（基于node） 
+- expressJs学习（基于node）
 	- http://www.th7.cn/web/js/201404/29836.shtml
 	- http://www.expressjs.com.cn/4x/api.html#res.send
-	
+
 - [http://editor.method.ac/  绘制路径，导出svg图，查看具体参数信息source](http://editor.method.ac/)
 
 - sublime text 3 代码校验插件的安装（包括js、css）
@@ -496,25 +498,25 @@
 
 
 		1.app.set(name,value)
-		
+
 		　　把名字为name的项的值设为value，用于设置参数
-		
+
 		　　app.set('views', path.join(__dirname, 'views'));   设置了模版文件夹的路径；主要清楚__dirname的意思就可以了，它是node.js中的全局变量，表示取当前执行文件的路径
-		
+
 		　　app.set('view engine', 'ejs');  设置使用的模版引擎，我们使用的ejs
-		
+
 		2.app.use([path], function)
-		
+
 		 　   用这个方法来使用中间件，因为express依赖于connect，有大量的中间件，可以通过app.use来使用；path参数可以不填，默认为'/'  (项目中用到的就不分别解释了，用到的时候自已查一API的中间件部分)
-		
+
 		　　app.use(express.static(path.join(__dirname, 'public'))); 这一句中可能要注意一下，express.static( )是处理静态请求的，设置了public文件，public下所有文件都会以静态资料文件形式返回（如样式、脚本、图片素材等文件）
-		
+
 		var routes = require('./routes/index');var users = require('./routes/users');app.use('/', routes);app.use('/users', users);
 		　　上面代码表示当用户使用/访问时，调用routes，即routes目录下的index.js文件，其中.js后缀省略，用/users访问时，调用routes目录下users.js文件
 		3.app.get(name)
-		
+
 		　　获取名为name的项的值
-		
+
 		if (app.get('env') === 'development') {    app.use(function(err, req, res, next) {        res.status(err.status || 500);        res.render('error', {            message: err.messag       });    });}
 		　　表示如果是开发环境，处理error时会输出堆栈信息
 
@@ -531,12 +533,12 @@
 
 		总的指导文章：
 		http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/
-		
+
 		这是 uc 一个项目的优化文章
 		https://xinranliu.me/2015-05-22-qiqu-performance/
-		
+
 		加上youtube 上 chrome developer 的 supercharged 开头几个将性能优化的例子
-		
+
 		加起来看，基本就入门了
 
 
@@ -547,23 +549,23 @@
 
 		JavaScript Promise迷你书
 		http://liubin.org/promises-book/#ch2-promise-all
-	
+
 		ES6-Promise (subset of rsvp.js)
 		https://github.com/stefanpenner/es6-promise/blob/master/README.md
 		https://github.com/onestraw/ebook  电子书
-		
+
 
 - 动画的执行速度
 
 		http://cubic-bezier.com/  贝塞尔曲线 （动画的执行速度）
-	
+
 		http://yisibl.github.io/cubic-bezier/
 
 
 - 淘宝 已使用 （检测浏览器 对ie）技术图谱
 
 		webp  http://isux.tencent.com/introduction-of-webp.html#comment-form
-	
+
 - gulp安装
 
 		https://segmentfault.com/a/1190000000372547  gulp安装
@@ -571,21 +573,21 @@
 - [flex布局使用](http://www.ruanyifeng.com/blog/2015/07/flex-examples.html )
 - uc移动端调试
 
-		http://plus.uc.cn/document/webapp/doc5.html  
+		http://plus.uc.cn/document/webapp/doc5.html
 
 - 前端知识点收集（一般够用）
 
 		http://www.tuicool.com/articles/F7JrMjj
 		https://cnodejs.org/topic/56ef3edd532839c33a99d00e
 
-	
+
 
 - MV*框架
 	- [http://bingojs2.mydoc.io/   bingoJS API官网](http://bingojs2.mydoc.io/)
 
 - web端的自适应  rem css pixel与device pixels （device-width viewport DevicePixelRadio）
 	- [http://www.cnblogs.com/koukouyifan/p/4066567.html](http://www.cnblogs.com/koukouyifan/p/4066567.html)
-	- [http://web.jobbole.com/87267/](http://web.jobbole.com/87267/)	
+	- [http://web.jobbole.com/87267/](http://web.jobbole.com/87267/)
 
 - [百度地图API http://lbsyun.baidu.com/index.php?title=webcomponent](http://lbsyun.baidu.com/index.php?title=webcomponent)
 
@@ -593,7 +595,7 @@
 
 - [JavaScript设计模式系列的文章：](http://www.codingserf.com/)
 	- [JavaScript设计模式：单例模式](http://www.codingserf.com/index.php/2015/05/javascript-design-patterns-singleton/)
-	
+
 	- 单例模式（Singleton Pattern）
 	- 桥接模式（Bridge Pattern）
 	- 组合模式（Composite Pattern）
@@ -621,14 +623,14 @@
 
 
 - 集成测试相关文章
-	
-	- http://taobaofed.org/blog/2015/12/10/frontend-test-platform/	
+
+	- http://taobaofed.org/blog/2015/12/10/frontend-test-platform/
 	- Nightwatch  WEB UI测试 http://nightwatchjs.org/
 		- http://stackoverflow.com/questions/tagged/nightwatch.js
 		- https://github.com/nightwatchjs/nightwatch
 	- Karma
 	- phantom
-- 翻墙 
+- 翻墙
 	- lantern （蓝灯）
 		- lantern下载
 			- http://www.bcoder.cn/?s=%E8%93%9D%E7%81%AF
@@ -641,20 +643,20 @@
 
 - 教程 测试
 	- http://teahour.fm/2015/08/16/vuejs-creator-evan-you.html
-	
+
 	- 云测试
 		- https://saucelabs.com/
 		- http://www.cnblogs.com/sparkling-ly/p/5653402.html (教程)
 
 	- 阿里前端测试 （主要针对页面死链接、浏览器截图。。。。没有多大的实用性）
 		- http://fts.aliyun.com/index.htm?spm=0.0.0.0.8SeQ8F
-	
+
 - app chrome 调试
 	- 模拟器(BlueStacks、夜神、海马)+真实手机
-- 插件编写 chrome	
+- 插件编写 chrome
 	- https://segmentfault.com/a/1190000006949838
 
-- 前端学习方向	
+- 前端学习方向
 	- http://www.w3school.com.cn/js/pro_js_object_defining.asp
 	- http://www.cnblogs.com/sanshi/archive/2009/07/08/1519036.html
 	- http://www.cnblogs.com/TomXu/tag/JavaScript/
@@ -663,15 +665,15 @@
 	- https://www.zhihu.com/question/22146521
 - 常用页面效果demo
 	http://web.jobbole.com/88005/
-- 原生与h5的交互	
+- 原生与h5的交互
 	- http://blog.csdn.net/ggh990640782/article/details/44598097
 
 
-- 前端资料新手手册	
+- 前端资料新手手册
 	- [http://f2er.club/](http://f2er.club/)
-- 微信小程序	
+- 微信小程序
 	- [http://www.wxappclub.com/   微信小程序俱乐部](http://www.wxappclub.com/)
-	
+
 	- [https://mp.weixin.qq.com/debug/wxadoc/dev/index.html 小程序文档](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
 	- [https://mp.weixin.qq.com/wiki 微信公众平台 · 小程序文档](https://mp.weixin.qq.com/wiki)
 	- [https://minapp.com/miniapp/  小程序应用商店](https://minapp.com/miniapp/)
@@ -686,9 +688,9 @@
 	- [http://www.jianshu.com/p/53a7da454057?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io](http://www.jianshu.com/p/53a7da454057?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
 
 
-	
 
-- es6 学习	
+
+- es6 学习
 	- http://es6.ruanyifeng.com/#docs/function
 
 	- 学习要点：箭头函数,类,import, const, let
@@ -716,34 +718,34 @@
 - 设计稿px与rem之间的转换
 	http://www.jianshu.com/p/b00cd3506782
 
-- 前端缓存技术 渐进式网页应用 Progress Web App 	
+- 前端缓存技术 渐进式网页应用 Progress Web App
 	- https://zhuanlan.zhihu.com/p/25800461
 	- http://www.jianshu.com/p/fda430412c16
 - 利用视口实现适配（移动端）
 	- http://web.jobbole.com/91190/
 - 改npm镜像了 消灭那些老是半路卡住你的npm install吧
-		下面是命令行命令 自己按需set 
-		
+		下面是命令行命令 自己按需set
+
 		# node-gyp 编译依赖的 node 源码镜像
-		$ npm set disturl https://npm.taobao.org/dist 
-		
+		$ npm set disturl https://npm.taobao.org/dist
+
 		# chromedriver 二进制包镜像
-		$ npm set chromedriver_cdnurl http://cdn.npm.taobao.org/dist/chromedriver 
-		
+		$ npm set chromedriver_cdnurl http://cdn.npm.taobao.org/dist/chromedriver
+
 		# operadriver 二进制包镜像
-		$ npm set operadriver_cdnurl http://cdn.npm.taobao.org/dist/operadriver 
-		
+		$ npm set operadriver_cdnurl http://cdn.npm.taobao.org/dist/operadriver
+
 		# phantomjs 二进制包镜像
-		$ npm set phantomjs_cdnurl http://cdn.npm.taobao.org/dist/phantomjs 
-		
+		$ npm set phantomjs_cdnurl http://cdn.npm.taobao.org/dist/phantomjs
+
 		# fsevents 二进制包
-		$ npm set fse_binary_host_mirror https://npm.taobao.org/mirrors/fsevents 
-		
+		$ npm set fse_binary_host_mirror https://npm.taobao.org/mirrors/fsevents
+
 		# node-sass 二进制包镜像
-		$ npm set sass_binary_site http://cdn.npm.taobao.org/dist/node-sass 
-		
+		$ npm set sass_binary_site http://cdn.npm.taobao.org/dist/node-sass
+
 		# electron 二进制包镜像
-		$ npm set electron_mirror http://cdn.npm.taobao.org/dist/electron/ 
+		$ npm set electron_mirror http://cdn.npm.taobao.org/dist/electron/
 - npm切换依赖安装源
 	- http://www.jianshu.com/p/0e332d34d345
 - vr 全景
@@ -798,4 +800,4 @@
 	- 参考demo [https://github.com/mgbq/vue-permission](https://github.com/mgbq/vue-permission)
 
 
-	
+
