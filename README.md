@@ -1,4 +1,7 @@
 ## collection everyday
+- 树插件
+	- [jsTree](https://www.jstree.com/)
+	- [zTree](http://www.treejs.cn/v3/main.php#_zTreeInfo)
 - js处理cookie，删除所有**兼容ios 微信浏览器**
     - ```
         var clearAll = function() {
