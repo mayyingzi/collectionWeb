@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mockjs demo example</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="mockjs">mockjs</h1>
+    </div>
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://mockjs.com/dist/mock.js"></script>
+    <script type="text/javascript">
+        // 调用mock方法模拟数据
+        Mock.mock(
+            '/user/info', {
+                userName: '@name', // 模拟名称
+                'age|1-100': 100, // 模拟年龄（1-100）
+                'color': '@color', // 模拟颜色
+                'date': '@date(yyyy-MM-dd)',
+                'url': '@url()',
+                'content': '@cparagraph()'
+            }
+        )
+
+        // ajax请求
+        $('#mockjs').click(function() {
+            $.ajax({
+                url: '/user/info',
+                dataType: 'json',
+                async: true,
+                data: {},
+                type: 'GET',
+                beforeSend: function() {
+                    // 请求处理前
+                },
+                success: function(req) {
+                    // 请求成功处理
+                    console.log(req)
+                },
+                complete: function() {
+                    // 请求完成
+                },
+                error: function() {
+                    // 请求出错
+                }
+            })
+        })
+
+
+    </script>
+</body>
+
+</html>

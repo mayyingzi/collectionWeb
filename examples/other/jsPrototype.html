@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>prototype</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // 类的继承
+    function Book() {
+        this.name = '';
+        this.page = 0;
+        this.clssify = ''
+    }
+
+    Book.prototype = {
+        constructor: Book,
+        init: function(option) {
+            this.name = option.name || ''
+            this.page = option.page || 0
+            this.classify = option.classify || ''
+        },
+        getName: function() {
+            console.log(this.name)
+        },
+        getPage: function() {
+            console.log(this.page)
+        },
+        getClassify: function() {
+            console.log(this.clssify)
+        }
+    }
+
+    // 1 实例式继承
+    function Computer() {
+        // call()、apply()，改变this的指向，第一个参数是函数的作用域，第二个是参数数组
+        Book.apply(this, arguments)
+    }
+    Computer.prototype = new Book();
+    Computer.prototype.constructor = Computer
+    Computer.prototype.init = function(option) {
+        option.classify = 'computer'
+        Book.prototype.init.call(this,option)
+    }
+    Computer.prototype.say = function() {
+        console.log('I\m' + this.name)
+    }
+
+    // 2 原型式继承 Object.create() 存在兼容问题，低版本浏览器
+    // 原理： 定义一个空的构造函数，然后修改其原型，使之成为一个跳板，可以见原型转化为真正的prototype
+    function ComputerOp() {
+        Book.apply(this,arguments)
+    }
+    ComputerOp.prototype = Object.create(Book.prototype)
+    ComputerOp.prototype.constructor = ComputerOp
+    ComputerOp.prototype.init = function(option) {
+        option.classify = 'computerOp'
+        Book.prototype.init(option)
+    }
+    ComputerOp.prototype.say = function() {
+        console.log('I\m ' + this.name)
+    }
+    // Object.creat的简单版本兼容
+    Object.create = function(prototype) {
+        function F() {}
+        F.prototype = prototype
+        return new F();
+    }
+
+    // 3 函数化继承
+    // 优势：存在私有变量和方法
+    function book(spec, my) {
+        var that = {}
+        // 私有变量
+        spec.name = spec.name || ''
+        spec.page = spec.page || 0
+        spec.classify = spec.classify
+
+        var getName = function() {
+            console.log(spec.name)
+        }
+        var getPage = function() {
+            console.log(spec.page)
+        }
+        var getClassify = function() {
+            console.log(spec.classify)
+        }
+
+        that.getName = getName
+        that.getPage = getPage
+        that.getClassify = getClassify
+
+        return that
+    }
+    // 函数化的优势：更好的进行封装和信息隐藏，目的是为了保护对象的完整性，即使that.say被外部篡改或者破坏掉， function computer 内部的say方法仍能够正常的工作
+    // that是一个公开数据存储容器，暴露出去的数据接口，都放在这个容器里面
+    // spec 四用来存储创建实例所需的信息，属于实例之间共同编辑的数据
+    // my是用来存储父类、子类之间共享的私密数据容器，外部是访问不到的
+    function computer(spec, my) {
+        spec = spec || {}
+        spec.classify = 'computer'
+        var that = book(spec, my)
+        var say = function() {
+            console.log('I/m' + spec.name)
+        }
+        that.say = say
+        return that
+    }
+</script>
+
+</html>
