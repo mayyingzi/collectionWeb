@@ -21,18 +21,18 @@
 
     Book.prototype = {
         constructor: Book,
-        init: function(option) {
+        init: function (option) {
             this.name = option.name || ''
             this.page = option.page || 0
             this.classify = option.classify || ''
         },
-        getName: function() {
+        getName: function () {
             console.log(this.name)
         },
-        getPage: function() {
+        getPage: function () {
             console.log(this.page)
         },
-        getClassify: function() {
+        getClassify: function () {
             console.log(this.clssify)
         }
     }
@@ -44,30 +44,30 @@
     }
     Computer.prototype = new Book();
     Computer.prototype.constructor = Computer
-    Computer.prototype.init = function(option) {
+    Computer.prototype.init = function (option) {
         option.classify = 'computer'
-        Book.prototype.init.call(this,option)
+        Book.prototype.init.call(this, option)
     }
-    Computer.prototype.say = function() {
+    Computer.prototype.say = function () {
         console.log('I\m' + this.name)
     }
 
     // 2 原型式继承 Object.create() 存在兼容问题，低版本浏览器
     // 原理： 定义一个空的构造函数，然后修改其原型，使之成为一个跳板，可以见原型转化为真正的prototype
     function ComputerOp() {
-        Book.apply(this,arguments)
+        Book.apply(this, arguments)
     }
     ComputerOp.prototype = Object.create(Book.prototype)
     ComputerOp.prototype.constructor = ComputerOp
-    ComputerOp.prototype.init = function(option) {
+    ComputerOp.prototype.init = function (option) {
         option.classify = 'computerOp'
         Book.prototype.init(option)
     }
-    ComputerOp.prototype.say = function() {
+    ComputerOp.prototype.say = function () {
         console.log('I\m ' + this.name)
     }
     // Object.creat的简单版本兼容
-    Object.create = function(prototype) {
+    Object.create = function (prototype) {
         function F() {}
         F.prototype = prototype
         return new F();
@@ -82,13 +82,13 @@
         spec.page = spec.page || 0
         spec.classify = spec.classify
 
-        var getName = function() {
+        var getName = function () {
             console.log(spec.name)
         }
-        var getPage = function() {
+        var getPage = function () {
             console.log(spec.page)
         }
-        var getClassify = function() {
+        var getClassify = function () {
             console.log(spec.classify)
         }
 
@@ -106,11 +106,19 @@
         spec = spec || {}
         spec.classify = 'computer'
         var that = book(spec, my)
-        var say = function() {
+        var say = function () {
             console.log('I/m' + spec.name)
         }
         that.say = say
         return that
+    }
+
+    // 小数取整
+    function toFixed(num, s) {
+        var times = Math.pow(10, s)
+        var des = num * times
+        des = Math.round(des) / times
+        return des + ''
     }
 </script>
 
