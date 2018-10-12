@@ -39,6 +39,12 @@
 	- [vConsole](https://github.com/Tencent/vConsole)
 	- [Eruda](https://github.com/liriliri/eruda/blob/master/doc/README_CN.md)
 		- 同vConsole类似
+		- 用法：
+		<!-- 移动端 debug 辅助工具 -->
+		<script src="//cdn.bootcss.com/eruda/1.4.2/eruda.min.js"></script>
+		<script>
+		    eruda.init();
+		</script>
 - [git的使用操作(!**推荐**)](https://juejin.im/post/5abef8356fb9a028df22bd78)
 - [理解this和闭包](https://juejin.im/entry/5ac21eb8f265da2392368433?utm_source=gold_browser_extension)
 - [前端模块化：CommonJS,AMD,CMD,ES6](https://juejin.im/post/5aaa37c8f265da23945f365c)
