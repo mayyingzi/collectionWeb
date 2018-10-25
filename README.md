@@ -259,6 +259,7 @@
 - 本地址配置一个http文件服务器
 	- anywhere
 	- http-server
+	- http-server-spa (http-server-spa <directory> <fallback> <port>, **use history-api-fallback, single page applications with frontend routing**)
 	- 使用ngnix
 - 穿透内网方向代理
 	- [ngrok](https://ngrok.com/product)
