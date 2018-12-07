@@ -564,6 +564,7 @@
 - [r.js配置参数含义（require打包压缩）](http://www.chenliqiang.cn/node/22)
 
 - [JS性能优化笔记](http://blog.csdn.net/huanghui8030/article/details/10148291)
+- [网站优化](https://juejin.im/post/5c07c6b96fb9a04a0d56a3cc?utm_source=gold_browser_extension)
 - JavaScript
 
 		JavaScript Promise迷你书
