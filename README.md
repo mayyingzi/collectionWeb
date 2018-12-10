@@ -262,7 +262,7 @@
 	- anywhere
 	- http-server
 	- live-server (live-server --port=1233 --watch=D:/file/test) 可以实时刷新监听文件编辑修改
-	- http-server-spa (http-server-spa <directory> <fallback> <port>, **use history-api-fallback, single page applications with frontend routing**)
+	- http-server-spa (http-server-spa <directory> <fallback> <port>, eg: http-server-spa /  index.html  1337   **use history-api-fallback, single page applications with frontend routing**)
 	- 使用ngnix
 - 穿透内网方向代理
 	- [ngrok](https://ngrok.com/product)
