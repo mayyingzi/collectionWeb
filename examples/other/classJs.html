@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS继承专题</title>
+</head>
+<body>
+    <ol>
+        <li>原型链继承</li>
+        <li>call或者apply继承</li>
+        <li>组合继承</li>
+        <li>原型式继承</li>
+        <li>寄生式继承</li>
+        <li>寄生组合式继承</li>
+    </ol>
+    <script>
+        /*
+        * 原型链继承存在两个问题
+        * 1、包含引用类型数据的原型属性，会被所有实例共享，基本数据类型则不会
+        * 2、在创建类型实例时，无法向父类型的构造函数中传递参数
+        */
+        // 原型链继承
+        function Parent() {
+            this.names = ['aa', 'bb', 'cc'];
+            this.age = 18;
+        }
+
+        function Child() {
+            console.log('I`m child')
+        }
+
+        Child.prototype = new Parent(); // 改变构造函数的原型对象
+        var child1 = new Child()
+
+        /*
+        * call或者apply 的原理是在子类型的构造函数中，借调 父类型的构造函数，最终实现子类型拥有父类型中属性的副本了
+        * call 或者 apply 这种继承方式在《Javascript 高级程序设计》中叫做“借用构造函数（constructor stealing）”，
+        * 解决了原型链继承中，引用数据类型被所有子实例共享的问题，也能够实现参数传递到构造函数中，但是唯一的问题在于业务代码也写在了构造函数中，函数得不到复用
+        */
+        // 继承 names 属性
+        console.log(child1.names)
+        console.log(child1.age)
+
+        child1.names.push('dd')
+        child1.age = 20
+
+        var child2 = new Child()
+        console.log(child2.names)
+        console.log(child2.age)
+
+        // call 或者 apply继承
+        function Cparent(age) {
+            this.names = ['aa', 'bb', 'cc']
+            this.age = age
+        }
+
+        function Cchild() {
+            Cparent.call(this, 18)
+        }
+
+        var cchild1 = new Cchild()
+        // 继承了 names 属性
+        console.log(cchild1.names)
+        cchild1.names.push('dd')
+        console.log(cchild1.age)
+
+        var cchild2 = new Cchild()
+        console.log(cchild2.names)
+        console.log(cchild2.age)
+
+        // 组合继承
+        /*
+        * 组合继承 （combination inheritance）也叫作伪经典继承，指的是，前面两种方法：原型链继承和 call或者apply继承 组合起来，
+        * 保证了实例都有自己的属性，同时也能够实现函数复用
+        *
+        * 组合继承分为两类：一次是创建子类型关联父类型原型对象的时候，另一次是在子类型构造函数的内部。
+        */
+        function Iparent(age) {
+            this.names = ['aa', 'bb', 'cc']
+            this.age = age
+        }
+
+        Iparent.prototype.sayName = function() {
+            console.log('Iparent sayName function')
+            console.log(this.names)
+        }
+
+        function Ichild() {
+            Iparent.call(this, 18) // 第一次调用
+        }
+
+        Ichild.prototype = new Iparent() // 第二次调用：通过原型链继承 sayName 方法
+        Ichild.prototype.constructor = Ichild // 改变 constructor 为子类型构造函数
+
+        var ichild1 = new Ichild()
+        ichild1.sayName()
+        ichild1.names.push('ichild1')
+        console.log(ichild1.age)
+
+        var ichild2 = new Ichild()
+        console.log(ichild2.names)
+        console.log(child2.age)
+        ichild2.sayName()
+
+        // 原型式继承
+        /*
+        * 原型式继承：将父类型作为一个对象，直接变成子类型的原型对象
+        * 是对原型链的集中封装，要求你有一个已有的对象为基础，
+        * 但是原型式继承也有共享父类引用属性，
+        * 无法传递参数的缺陷
+        * 这个方法有了正式的API：Object.create({...})
+        * 当有一个对象，想让子实例继承的时候，可以直接使用Object.create() 方法
+        */
+        function object(o) {
+            function F() {}
+            F.prototype = o;
+            return new F()
+        }
+
+        var oparent = {
+            age: 18,
+            names: ['aa', 'bb', 'oparent']
+        }
+
+        var ochild1 = object(oparent)
+        // 继承了names 属性
+        console.log(ochild1.names)
+        ochild1.names.push('ochild1')
+        console.log(ochild1.age)
+
+        var ochild2 = object(oparent)
+        console.log(ochild2.names)
+        console.log(ochild2.age)
+        ochild2.names.push('ochild2')
+        console.log(ochild1.names)
+
+        // 寄生式继承
+        /*
+        * 寄生式继承：原型式 + 工厂模式结合 ，目的是为了封装创建的过程
+        */
+
+        function createAnother(original) {
+            var clone = object(original) // 通过函数调用创建一个新对象
+            clone.sayHi = function() {
+                // 以某种方式来增强这个对象
+                console.log('hi')
+                console.log(this.names)
+            }
+            // 返回这个对象
+            return clone
+        }
+
+        var fperson = {
+            age: 18,
+            names: ['aa','bb', 'fperson']
+        }
+
+        var anotherPerson = createAnother(fperson)
+        anotherPerson.sayHi()
+        anotherPerson.names.push('anotherPerson')
+
+        anotherPerson.sayHi()
+
+        // 寄生组合式继承
+        /*
+        * 组合继承会有一个两次调用父类的构造函数会造成浪费的缺点，寄生组合继承就可以解决这个问题
+        */
+        function inheritPrototype(subType, superType) {
+            var prototype = object(superType.prototype) // 创建了父类愿你选哪个的浅复制
+            prototype.constructor = subType // 修正原型的构造函数
+            subType.prototype = prototype // 将子类的原型替换为这个原型
+
+        }
+
+        function SuperType(age) {
+            this.age = age
+            this.names = ['aa', 'bb', 'SuperType']
+        }
+
+        SuperType.prototype.sayName = function() {
+            console.log(this.names)
+        }
+
+        function SubType(age) {
+            SuperType.call(this, age)
+            this.age = age
+        }
+
+        // FIXME:核心——因为对父类原型的复制，所以不包含父类的构造函数，也就不会调用两次父类的构造函数造成浪费
+        inheritPrototype(SubType, SuperType)
+
+        SubType.prototype.sayAge = function() {
+            console.log(this.age)
+        }
+
+        var inchild1 = new SubType(22)
+        inchild1.sayAge()
+        inchild1.sayName()
+
+        inchild1.names.push('inchild1')
+
+        var inchild2 = new SubType(15)
+
+        inchild2.sayAge()
+        inchild2.sayName()
+
+
+    </script>
+</body>
+</html>
