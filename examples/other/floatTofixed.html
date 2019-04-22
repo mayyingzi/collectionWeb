@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优雅的处理js小数计算错误的问题</title>
+</head>
+<body>
+
+    <script>
+        // 获取最大补位长度
+        var findMinRadixPoint = function(numberList) {
+            var maxLg = 0;
+            numberList.forEach(function(num) {
+                var numStr = num.toString();
+                var numSplit = numStr.split('.')
+                var bitLg = (numSplit[1] || '').length;
+                (bitLg > maxLg) && (maxLg = bitLg)
+
+            })
+
+            return maxLg
+        }
+
+        // console.log(findMinRadixPoint([0.1+ 0.2]))
+
+        // 数字部位
+        var numberCoverPosition = function(number, length) {
+            var numberStr = String(number)
+            var lg = numberStr.length;
+            var idx = numberStr.indexOf('.')
+
+            if(idx === -1) {
+                return number * Math.pow(10, length)
+            } else {
+                var addW = length - (lg -1 - idx)
+                let oLoop = '';
+                while(addW) {
+                    oLoop += '0';
+                    addW--
+
+                    console.log(addW--)
+                }
+                return Number(numberStr.replace(/(\d+?)\.(\d+?)/, `$1$2{oLoop}`))
+            }
+        }
+        // 会出现无限循环
+        // console.log(numberCoverPosition(0.1+0.2, 2))
+
+        // 数字减位
+        var NumberDigitAbsorption = function(number, length) {
+            var numberStr = String(number)
+            var lg = numberStr.length
+
+            if(lg > length) {
+                console.log(lg)
+                numberStr = numberStr.substr(0, lg - length) + '.' + numberStr.substr(lg - length)
+            } else {
+                var leftW = length - lg
+                var oLoop ='';
+
+                while(leftW) {
+                    oLoop += '0'
+                    leftW--;
+                }
+
+                numberStr = '0.' + oLoop + numberStr
+            }
+
+            return numberStr
+        }
+
+
+        console.log(NumberDigitAbsorption(1.1+1.2, 2))
+
+    </script>
+
+</body>
+</html>

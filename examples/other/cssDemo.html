@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>动画css练习</title>
+    <style>
+        .testHe {
+            border: 1px solid #ccc;
+            height: 50px;
+            color: #ff4d6a;
+            max-width: 200px;
+            text-align: center;
+            position: relative;
+            /* transition: height 1s linear;
+            transition: max-width 1s linear;             */
+            transform: scale(0.5) translate(0, 0) skew(30deg, 20deg);
+            transition: transform 1s linear;
+        }
+
+        .hbox:hover .testHe{
+            /* height: 500px;
+            max-width: 500px;
+            border-radius: 5px; */
+            transform: scale(1.5) translate(100px, 200px) skew(0, 0);
+        }
+
+        .fwrap{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            border: 2px dotted #ccc;
+            padding: 20px;
+        }
+        .fitem{
+            flex: 1;
+            border: 1px solid #ff4d6a;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>transition：</p>
+        不管是动态设置的还是非动态设置的过渡效果，只要过渡效果指定的属性值发生变化就会出发过渡效果
+    </div>
+    <div>
+        <p>animation：</p>
+        如果是非动态设置的，那么页面加载后（集体是页面加载完还是元素渲染完触发？）就会出发动画效果；如果是动态设置的，那么设置后（假设没有设置delay）就会触发动画效果。
+        后面再改变属性值也不会出发动画效果了，除非一种情况（这种情况不会出发transition定义的过渡效果），就是元素从display: none状态变成非 display: none状态时，会触发动画效果
+    </div>
+    <div class="hbox">
+        <div class="testHe">
+            hover 元素高度变化
+        </div>
+    </div>
+
+    <div class="fwrap">
+        <div class="fitem">1</div>
+        <div class="fitem">2</div>
+        <div class="fitem">3</div>
+    </div>
+
+</body>
+
+</html>

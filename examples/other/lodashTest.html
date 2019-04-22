@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lodash练习</title>
+</head>
+<body>
+
+    <!-- lodash cdn
+    https://www.bootcdn.cn/lodash.js/
+    -->
+    <script src="https://cdn.bootcss.com/lodash.js/4.17.11/lodash.min.js"></script>
+    <script>
+        // 数组分割 _.chunk(array,[size=1]),将数组根据size 分割为多个长度为size的数组
+        var arr = [1,2,3,4,5, 0 , null, undefined, NaN, false, ""]
+        var chunckArr = _.chunk(arr, 2)
+        console.log(chunckArr)
+
+        // 数组过滤假值 _.compact(array)，吧数组中的假值全部直接过滤掉 false null 0 "" undefined NaN
+        var compactArr = _.compact(arr)
+        console.log(compactArr)
+
+        // 数组拼接 _.concat(array, [values]) 把数组和另外其他数组或者值连接在一起（不改变原有数组）
+        var otherArr = ['add1', 'add2']
+        var concatArr = _.concat(arr, otherArr)
+        console.log('concatArr', concatArr)
+        console.log('arr', arr)
+        console.log( 'otherArr', otherArr)
+        // 取数组差值 _.difference(array, [vaues]) 返回一个不在其给定数组之的新数组
+        var needArr = [4,5,0]
+        var differenceArr = _.difference(arr, needArr)
+        console.log(differenceArr)
+
+        // 去重排序 _.union([arrays]) 创建顺序排列的唯一值组成的数组 所有值经过 SameValueZero等值比较
+        var unionArr = _.union([1,2], [2,4], [1,3])
+        console.log(unionArr)
+
+        // 去重按照某个规则排序 _.unionBy([arrays], [iteraee = _.identity])
+        var unionByArr = _.unionBy([2,1], [1, 2, 3], Math.floor)
+        console.log(unionByArr)
+        // the _.property iteratee shorthand
+        var unionByP = _.unionBy([{x: 1}], [{x: 2}], [{x: 1}], 'x')
+        console.log(unionByP)
+
+        // 去重按照某个规则 _.unionWith([arrays], [comparator]) 这个方法类似_.union，除了他接受一个 comparator 调用比较arrays 数组的每一个元素。comparator调用时会传入2个参数
+        // (arrVal, othVal)
+        var objects = [{x: 1, y: 2}, {x:2, y: 1}]
+        var others = [{x: 1, y: 1}, {x:1, y: 2}]
+        var unionWithArr = _.unionWith(objects, others, _.isEqual)
+        console.log(unionWithArr)
+
+        // 去除某个数值 ._pull(array, [values])
+        var oldArr = [1,33,2,1,3,2]
+        var pullArr = _.pull(oldArr, 2, 3)
+        console.log(oldArr, 'oldArr')
+        console.log(pullArr, 'pullArr')
+
+        // 两个数相除 _.divide
+        console.log('两个数相除 6/4：', _.divide(6, 4))
+
+        // 创建唯一值数组 _.xor([arrays])
+        console.log(_.xor([1,2,3],[2,3,4], [4,3,5,6]))
+
+    </script>
+</body>
+</html>
