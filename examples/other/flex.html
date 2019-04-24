@@ -57,13 +57,48 @@
         .text-1000{
             height: 1000px;
         }
+
+        /* 三列布局 */
+        .threeCol{
+            width: 100%;
+
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+
+            min-height: 800px;
+        }
+        .colLeft{
+            width: 20%;
+            background-color: #ccc;
+            color: #000;
+        }
+        .colCenter{
+            width: 100%;
+
+            border-top:solid 1px #ccc;
+            border-bottom: solid 1px #ccc;
+        }
+        .colRight{
+            width: 20%;
+
+            background-color: #ccc;
+            color: #000;
+        }
     </style>
 </head>
 
 <body>
     <div class="mainApp">
         <div class="header">头部</div>
-        <div class="mainSetion">中间
+        <div class="mainSetion">
+            <h2>三列布局</h2>
+            <div class="threeCol">
+                <div class="colLeft">左</div>
+                <div class="colCenter">中</div>
+                <div class="colRight">右</div>
+            </div>
             <div class="text-1000">测试超长内容，1000px</div>
         </div>
         <div class="footer">底部</div>
