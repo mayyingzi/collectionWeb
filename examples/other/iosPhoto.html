@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>前端解决ios手机竖拍上传图片旋转90° 完美适配：Android/ios/Windows</title>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.3.0/exif.js"></script>
+    <script src="js/uploadImage.js"></script>
+    <!-- <script src="js/tech.js"></script> -->
+    <style>
+        img{
+            display: block;
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="featfile">
+        <div class="featimage featupfile phoneclick" id="imgcontainer">
+            <img src="" class="fileimg" id="fileimg">
+            <!--canvas 为后文引用-->
+            <canvas id="Drawborder"></canvas>
+        </div>
+        <!--   multiple="multiple" 是为了input能直接支持 Formdata 上传图片到后台 后文有述 -->
+        <input type=file name="image" multiple="multiple" class="imgfilebtn"
+            accept="image/jpeg,image/png,image/gif,image/jpg" onchange="selectFileImage(this)">
+    </div>
+</body>
+
+</html>
