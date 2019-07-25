@@ -1,4 +1,6 @@
 ## collection everyday
+- 一个合格的前端都应该阅读这些文章
+  - https://juejin.im/post/5d387f696fb9a07eeb13ea60?utm_source=gold_browser_extension
 - 在线编辑器
 	https://codesandbox.io/s/
 - 面试图谱（前端）
