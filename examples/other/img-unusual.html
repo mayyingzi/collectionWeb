@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>图片异常处理</title>
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .img-list {
+            padding: 10px 5px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .per-item {
+            padding: 0 5px 10px;
+            width: 50%;
+            position: relative;
+            padding-top: 30%;
+            /* background-color: #efefef; */
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+        }
+
+        .img-box {
+            position: absolute;
+            top: 0;
+            bottom: 10px;
+            left: 5px;
+            right: 5px;
+            overflow: hidden;
+            background-color: #efefef;
+        }
+
+        .cur-img {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img-list">
+        <div class="per-item">
+            <div class="img-box">
+                <img class="cur-img" src="./img/c_img1.jpg">
+            </div>
+        </div>
+        <div class="per-item">
+            <div class="img-box">
+                <img class="cur-img" src="./img/test_io.png">
+            </div>
+        </div>
+        <div class="per-item">
+            <div class="img-box">
+                <img class="cur-img" src="./img/c_img1.jpg">
+            </div>
+        </div>
+        <div class="per-item">
+            <div class="img-box">
+                <img class="cur-img" src="./img/c_img3.jpg">
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('error', function (e) {
+            // console.log(e.target)
+            var target = e.target, // 当前dom节点
+                tagName = target.tagName,
+                times = Number(target.dataset.times) || 0, // 已失败的次数，默认为0
+                allTimes = 3; // 总失败次数，此时设定为3
+            // 当前异常是由图片加载引起的一场
+            if (tagName.toUpperCase() === 'IMG') {
+                // 超过限定次数为3次，则表示网络问题
+                if (times >= allTimes) {
+                    target.src =
+                        'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+                } else {
+                    target.dataset.times = times + 1;
+                    target.src = './img/wifi-error.png';
+                }
+            }
+        }, true)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>垂直居中实现</title>
+</head>
+<style>
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .perPart {
+        padding-bottom: 30px;
+    }
+
+    .wrap {
+        border: 1px solid #ff4d6a;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .box {
+        background-color: #137ffa;
+        color: #fff;
+        font-size: 16px;
+
+    }
+
+    .size {
+        height: 200px;
+        width: 200px;
+    }
+
+    .ab-mr {
+        position: relative;
+    }
+
+    .ab-mr .size {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -100px;
+        margin-top: -100px;
+    }
+
+    .ab-mr-auto {
+        position: relative;
+    }
+
+    .ab-mr-auto .size {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    .ab-calc {
+        position: relative;
+    }
+
+    .ab-calc .size {
+        position: absolute;
+        top: calc(50% - 100px);
+        left: calc(50% - 100px);
+    }
+
+    .ab-tran {
+        position: relative;
+    }
+
+    .ab-tran .box {
+        position: absolute;
+        padding: 20px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%)
+    }
+
+    .line-md {
+        line-height: 300px;
+        text-align: center;
+        font-size: 0;
+    }
+
+    .line-md .box {
+        font-size: 16px;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: initial;
+        text-align: left;
+        /* 修正文字 */
+    }
+
+    .div-ver {
+        writing-mode: vertical-lr;
+    }
+
+    .wp-writing {
+        margin-top: 15px;
+
+        writing-mode: vertical-lr;
+        text-align: center;
+
+    }
+
+    .wp-writing .inner {
+        writing-mode: horizontal-tb;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .wp-writing .box {
+        display: inline-block;
+        margin: auto;
+        text-align: left;
+    }
+
+    .table-wp {
+        text-align: center;
+    }
+
+    .table-wp .box {
+        display: inline-block;
+    }
+
+    .css-table {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .css-table .box {
+        display: inline-block;
+    }
+
+    .css-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .css-flex .box {
+        padding: 20px;
+    }
+
+    .css-grid{
+        display: grid;
+    }
+    .css-grid .box{
+        align-self: center;
+        justify-self: center;
+
+        padding: 20px;
+    }
+</style>
+
+<body>
+    <div class="perPart">
+        <h1>absolute + 负margin (居中元素固定高宽)</h1>
+        <div class="wrap ab-mr">
+            <div class="box size">壹号</div>
+        </div>
+    </div>
+    <div class="perPart">
+        <h1>absolute + margin auto (居中元素固定高宽)</h1>
+        <div class="wrap ab-mr-auto">
+            <div class="box size">贰号</div>
+        </div>
+    </div>
+    <div class="perPart">
+        <h1>absolute + calc (居中元素固定高宽)</h1>
+        <div class="wrap ab-calc">
+            <div class="box size">叁号</div>
+        </div>
+    </div>
+    <div class="perPart">
+        <h1>absolute + transform</h1>
+        <div class="wrap ab-tran">
+            <div class="box">肆号</div>
+        </div>
+    </div>
+    <div class="perPart">
+        <h1>lineheight</h1>
+        <div class="wrap line-md">
+            <div class="box">伍号</div>
+        </div>
+    </div>
+    <div class="perPart">
+        <h1>writing-mode</h1>
+        <div class="wrap">
+            <div class="div-hor">水平方向</div>
+            <div class="div-ver">垂直方向</div>
+        </div>
+        <div class="wrap wp-writing">
+            <div class="inner">
+                <div class="box">陆号</div>
+            </div>
+        </div>
+    </div>
+    <div class="perPart">
+        <h1>table</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="wrap table-wp">
+                        <div class="box">柒号</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="perPart">
+        <h1>css-table</h1>
+        <div class="wrap css-table">
+            <div class="box">捌号</div>
+        </div>
+    </div>
+    <div class="perPart">
+        <h1>flex</h1>
+        <div class="wrap css-flex">
+            <div class="box">玖号</div>
+        </div>
+    </div>
+    <div class="perPart">
+        <h1>grid</h1>
+        <div class="wrap css-grid">
+            <div class="box">拾号</div>
+        </div>
+    </div>
+</body>
+
+</html>
