@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>使用canvas研所图片</title>
+</head>
+
+<body>
+    <div>
+        思路分析：1、先将图片的file文件转化成baseURL；2、创建一个image标签去接收文件获取图片的高宽和比例；3、创建canvas画布设置画布的大小；4、将图片绘制到canvas上面；
+        5、对比canvas进行压缩处理，获取新的baseURL；6、将baseURL转化回文件
+    </div>
+    <input type="file" id="fileImg" class="fileImg">
+    <p>未压缩图片</p>
+    <img class="img-orig" src="" alt="" srcset="">
+
+    <p>压缩图片</p>
+    <img class="img-gip" src="" alt="" srcset="">
+    <script src="//cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        function getObjectURL(file) {
+            var url = null;
+            if (window.createObjectURL != undefined) {
+                url = window.createObjectURL(file);
+            } else if (window.URL != undefined) { // mozilla(firefox)
+                url = window.URL.createObjectURL(file);
+            } else if (window.webkitURL != undefined) { // webkit or chrome
+                url = window.webkitURL.createObjectURL(file);
+            }
+            return url;
+        }
+
+        // 将file文件转化为base64
+        /*
+         * @param {二进制文件流} file
+         * @param {回调函数，返回base64} fn
+         */
+        function changeFileToBaseURL(file, fn) {
+            // 创建读取对象
+            var fileReader = new FileReader();
+            // 如果file没定义返回null
+            if (file == undefined) return fn(null)
+            // 读取file文件，得到的结果为base64位
+            fileReader.readAsDataURL(file);
+            fileReader.onload = function () {
+                // 把读取到的base64 执行回调
+                var imageBase64Data = this.result;
+                fn(imageBase64Data)
+            }
+        }
+
+        // 将base64转化为文件流
+        /*
+         * 将base64转化为文件流
+         * @param {baseURL} dataurl
+         * @param {文件名称} filename
+         * @return {文件二进制流}
+         */
+        function dataURLtoFile(dataurl, filename) {
+            var arr = dataurl.split(','),
+                mime = arr[0].match(/:(.*?);/)[1],
+                bstr = atob(arr[1]),
+                n = bstr.length,
+                u8arr = new Uint8Array(n);
+            while (n--) {
+                u8arr[n] = bstr.charCodeAt(n)
+            };
+
+            return new File([u8arr], filename, {
+                type: mime
+            })
+        }
+        // 压缩方法
+        /**
+         * canvas压缩图片
+         * @param {参数obj} param
+         * @param {文件二进制流} param.file 必传
+         * @param {目标压缩大小} param.targetSize 不传初始赋值-1
+         * @param {输出图片宽度} param.width 不传初始赋值-1，等比缩放不用传高度
+         * @param {输出图片名称} param.fileName 不传初始赋值image
+         * @param {压缩图片程度} param.quality 不传初始赋值0.92。值范围0~1
+         * @param {回调函数} param.succ 必传
+         */
+        function pressImg(param) {
+            //如果没有回调函数就不执行
+            if (param && param.succ) {
+                //如果file没定义返回null
+                if (param.file == undefined) return param.succ(null);
+                //给参数附初始值
+                param.targetSize = param.hasOwnProperty("targetSize") ? param.targetSize : -1;
+                param.width = param.hasOwnProperty("width") ? param.width : -1;
+                param.fileName = param.hasOwnProperty("fileName") ? param.fileName : "image";
+                param.quality = param.hasOwnProperty("quality") ? param.quality : 0.92;
+                var _this = this;
+                // 得到文件类型
+                var fileType = param.file.type;
+                // console.log(fileType) //image/jpeg
+                if (fileType.indexOf("image") == -1) {
+                    console.log('请选择图片文件^_^');
+                    return param.succ(null);
+                }
+                //如果当前size比目标size小，直接输出
+                var size = param.file.size;
+                if (param.targetSize > size) {
+                    return param.succ(param.file);
+                }
+                // 读取file文件,得到的结果为base64位
+                changeFileToBaseURL(param.file, function (base64) {
+                    if (base64) {
+                        var image = new Image();
+                        image.src = base64;
+                        image.onload = function () {
+                            // 获得长宽比例
+                            var scale = this.width / this.height;
+                            // console.log(scale);
+                            //创建一个canvas
+                            var canvas = document.createElement('canvas');
+                            //获取上下文
+                            var context = canvas.getContext('2d');
+                            //获取压缩后的图片宽度,如果width为-1，默认原图宽度
+                            canvas.width = param.width == -1 ? this.width : param.width;
+                            //获取压缩后的图片高度,如果width为-1，默认原图高度
+                            canvas.height = param.width == -1 ? this.height : parseInt(param.width / scale);
+                            //把图片绘制到canvas上面
+                            context.drawImage(image, 0, 0, canvas.width, canvas.height);
+                            //压缩图片，获取到新的base64Url
+                            var newImageData = canvas.toDataURL(fileType, param.quality);
+                            //将base64转化成文件流
+                            var resultFile = dataURLtoFile(newImageData, param.fileName);
+                            //判断如果targetSize有限制且压缩后的图片大小比目标大小大，就弹出错误
+                            if (param.targetSize != -1 && param.targetSize < resultFile.size) {
+                                console.log("图片上传尺寸太大，请重新上传^_^");
+                                param.succ(null);
+                            } else {
+                                //返回文件流
+                                param.succ(resultFile);
+                            }
+                        }
+                    }
+                });
+            }
+        }
+        // 图片文件上传获取url
+        $("#fileImg").on('change', function () {
+            var objUrl = getObjectURL(this.files[0]); //获取文件信息
+            if (objUrl) {
+                $(".img-orig").attr("src", objUrl);
+            }
+
+            pressImg({
+                file: this.files[0],
+                targetSize: 1 * 1024 * 1024,
+                quality: 0.5,
+                width: 600,
+                succ: function (resultFile) {
+                    //如果不是null就是压缩成功
+                    if (resultFile) {
+                        //TODO
+
+                        console.log(resultFile)
+
+                        var objUrl = getObjectURL(resultFile); //获取文件信息
+                        if (objUrl) {
+                            $(".img-gip").attr("src", objUrl);
+                        }
+                    }
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>

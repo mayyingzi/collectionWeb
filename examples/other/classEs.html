@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>class测试</title>
+</head>
+<body>
+    <script>
+        class Animal {
+            // name
+            constructor(theName) {
+                this.name = theName
+            }
+
+            move(distanceInmeters) {
+                console.log(`${this.name} moved ${distanceInmeters}m`)
+            }
+        }
+
+        class Snake extends Animal{
+            constructor(name) {
+                super(name)
+            }
+            move(distanceInmeters) {
+                console.log('Slithering...')
+                super.move(distanceInmeters)
+            }
+        }
+
+        class Horse extends Animal{
+            constructor(name) {
+                super(name)
+            }
+            move(distanceInmeters) {
+                console.log('Galloping...')
+                super.move(distanceInmeters)
+            }
+        }
+
+        let sam = new Snake('Smamy the Python')
+        let tom = new Horse('Tommy the Palomino')
+
+        sam.move(1)
+        tom.move(34)
+    </script>
+</body>
+</html>

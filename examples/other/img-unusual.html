@@ -11,6 +11,7 @@
         body {
             padding: 0;
             margin: 0;
+            /* filter: blur(2px); */
         }
 
         .img-list {
@@ -59,10 +60,66 @@
             max-height: 100%;
             margin: 0 auto;
         }
+        .css-border{
+            display: inline-block;
+            border: 100px solid;
+            margin: 10px auto;
+            border-color: #ff4d6a transparent transparent transparent;
+            /* border-width: 50px 80px 100px 0px; */
+        }
+        /* display: table 多列等高布局 */
+        .part-table{
+            width: 100%;
+            display: table;
+            border-spacing: 30px;
+        }
+        .pa-item{
+            background-color: #efefef;
+            display: table-cell;
+            border: 1px solid #ccc;
+            width: 200px;
+        }
+        .test-resize{
+            resize: horizontal;
+            border: 1px solid #000;
+            width: 250px;
+            overflow: hidden;
+
+        }
+        /* 水波效果 */
+        .water-waves{
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 1px solid silver;
+            text-align: center;
+
+        }
     </style>
 </head>
 
 <body>
+    <!-- 水波 -->
+    <div class="water-waves">
+        水波效果
+        <div class="water-wave1"></div>
+        <div class="water-wave2"></div>
+        <div class="water-wave3"></div>
+    </div>
+    <!-- 多列等高布局 -->
+    <div class="part-table">
+        <div class="pa-item" style="height: 200px">1</div>
+        <div class="pa-item">2</div>
+        <div class="pa-item">3</div>
+        <div class="pa-item">4</div>
+    </div>
+    <div class="test-resize">
+        <div class="css-border"></div>
+
+    </div>
     <div class="img-list">
         <div class="per-item">
             <div class="img-box">
