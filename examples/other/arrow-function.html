@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>什么时候使用function，箭头函数</title>
+</head>
+
+<body>
+    <script>
+        // 在js中，方法是存在对象属性中的函数。当调用该方法是，this将指向方法所属的对象
+
+        // 使用箭头函数来定义方法
+        const calculate = {
+            array: [1, 2, 3],
+            sum() {
+                console.log(this === window)
+
+                return this.array.reduce((result, item) => {
+                    return result + item
+                })
+            }
+        }
+
+        console.log(this === window)
+        console.log(calculate.sum()); // 使用箭头函数定义。但是在调用是， calculate.sum()会抛出一场 typeError，是因为 this.array为undefined
+
+        // call apply bind的区分以及应用场景，
+        // -2 调用call、apply、bind必须是个函数
+        // -1 fun参数格式不同
+        // call/apply改变函数的this上下文后马上执行该函数
+        // bind则是返回改变上下文后的函数，不会执行该函数
+        var testCons = {
+            name: 'testCons',
+            doCons: function (name, age) {
+                console.log(this.name)
+                console.log('pass name:' + name + ' ,pass age: ' + age)
+            }
+        }
+
+        var bindCons = {
+            name: 'bindCons'
+        }
+        var callCons = {
+            name: 'callCons'
+        }
+
+        var applyCons = {
+            name: 'applyCons'
+        }
+        // bind返回 方法的副本
+        bindCons.doCons = function (name, age) {
+            return testCons.doCons.bind(bindCons, name, age)()
+        }
+
+        bindCons.doCons('bindCons-name', 'bindCons-age')
+        // call apply 区分
+        // 参数数量/顺序确定就用call，参数数量/顺序不劝你的那个的话就用apply
+        // 考虑可读性：参数数量不多就用call，数量比较多的话，把参数整合成数组
+        // 参数集合已经是一个数组的情况，用apply，比如获取数组的最大/最小值
+
+        // 手写call
+        Function.prototype.myCall = function (context, ...arr) {
+            if (context === null || context === undefined) {
+                // 指定为null 和 undefined 的this值会自动指向全局对象（浏览器中为window）
+                context = window
+            } else {
+                context = Object(context) // 值为原始值（数字、字符串、布尔值）的this 会指向原始值的实例对象
+
+            }
+
+            context.testFn = this; // 函数的this指向隐式绑定到context上
+
+            let result = context.testFn(...arr); // 通过隐式绑定执行函数并传递参数
+            delete context.testFn; // 删除上下文对象的属性
+
+            return result // 返回执行结果
+        }
+
+        testCons.doCons.myCall(callCons, 'callname', 'callage')
+
+        // 手写 apply
+        Function.prototype.myApply = function (context) {
+            if (context === null || context === undefined) {
+                context = window
+            } else {
+                context = Object(context)
+            }
+
+            // Javascript权威指南判断石佛为数组对象
+            function isArrayLike(o) {
+                if (o &&
+                    typeof o === 'object' &&
+                    isFinite(o.length) &&
+                    o.length >= 0 &&
+                    o.length === Math.floor(o.length) &&
+                    o.length < 4294967296)
+                    return true
+                else
+                    return false
+            }
+
+            context.testFn = this
+            let args = arguments[1]
+            console.log('----------')
+            console.log(args)
+            console.log('----------')
+
+            let result
+            if (args) {
+                if (!Array.isArray(args) && !isArrayLike(args)) {
+                    throw new TypeError('myApply 第二个参数不为数组并且不为数组对象报错错误')
+                } else {
+                    args = Array.from(args) // 转为数组
+                    result = context.testFn(...args)
+                }
+            } else {
+                result = context.testFn()
+            }
+
+            delete context.testFn
+
+            return result
+        }
+
+        testCons.doCons.myApply(applyCons, ['applyname', 'applyage'])
+
+        // 手写bind
+        // 拷贝原函数：1-通过变量存储原函数；2-使用Object.creat复制原函数的prototype给fToBind
+        // 返回拷贝的函数
+        // 调用拷贝的函数：1-new调用判断，通过instanceof判断函数是否通过new调用，来决定绑定的context；2-绑定this+传递参数；3-返回源函数的执行结果
+        Function.prototype.myBind = function(objThis, ...params) {
+            const thisFn = this; // 存储源函数以及上方的params（函数参数）
+            // 对返回的函数 sacondParams 二次传参
+            let fToBind = function(...secondParams) {
+                const isNew = this instanceof fToBind // this是否是fToBind的实例 也就是返回的fToBind是否通过new调用
+                const context = isNew ? this : Object(objThis) // new调用就绑定到this上，否则就绑定到传入的objThis上
+                return thisFn.apply(context, [...params, ...secondParams]) // 用apply调用原函数绑定this的指向并传递参数，返回执行结果
+            }
+
+            fToBind.prototype = Object.create(thisFn.prototype) // 复制原函数的prototype给fToBind
+            return fToBind; // 返回拷贝的函数
+        }
+
+        var ibindCons = {
+            name: 'ibindCons'
+        }
+
+        ibindCons.doCons = testCons.doCons.myBind(ibindCons, 'ibindname', 'ibindage')
+
+        ibindCons.doCons()
+
+        var regTel = /^((\+|00)86)?1[3-9]\d{9}$/ // 宽松
+        var regTelStrict = /^((\+|00)86)?1((3[\d])|(4[5,6,7,9])|(5[0-3,5-9])|(6[5-7])|(7[0-8])|(8[\d])|(9[1,8,9]))\d{8}$/
+        var regUrl = /^((https?|ftp|file):\/\/)?([\da-z.-]+)\.([a-z.]{2,6})(\/\w\.-]*)*\/?/
+        var
+    </script>
+</body>
+
+</html>

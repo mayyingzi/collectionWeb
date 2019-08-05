@@ -1,4 +1,5 @@
 ## collection everyday
+- vscode 正则常用表达查询插件：any-rule
 - 一个合格的前端都应该阅读这些文章
   - https://juejin.im/post/5d387f696fb9a07eeb13ea60?utm_source=gold_browser_extension
 - 在线编辑器
