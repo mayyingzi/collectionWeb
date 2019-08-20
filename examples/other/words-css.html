@@ -1,0 +1,158 @@
+<!--
+ * @Description: 彻底搞懂word-break、word-wrap、white-space
+ * @Author: your name
+ * @Date: 2019-08-09 15:43:16
+ * @LastEditTime: 2019-08-09 16:52:03
+ * @LastEditors: Please set LastEditors
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>彻底搞懂word-break、word-wrap、white-space</title>
+    <style>
+        .box {
+            width: 100px;
+            border: 1px solid #ddd;
+            /* 空格被合并，换行符无效，连原本的自动换行都没有了！只有</br>才能导致换行。表现为：永不换行 */
+            margin-bottom: 40px;
+        }
+
+        .box-nowrap{
+            white-space: nowrap;
+
+        }
+        /* 保留 preserve 空格和换行符都将被保留，自动换行没有。保留原文格式 */
+        .box-pre {
+            white-space: pre;
+        }
+
+        /* preserve + wrap , 保留空格和换行符，且可以自动换行 */
+        .box-pre-wrap {
+            white-space: pre-wrap;
+        }
+
+        /* preserve+new line+wrap  自动换行 */
+        .box-pre-line{
+            white-space: pre-line;
+        }
+
+        /* 所有单词 一律不拆分换行。只有空格可以出啊发自动换行 */
+        .box-keep-all{
+            word-break: keep-all;
+        }
+
+        /* 所有单词碰到边界一律拆分换行 */
+        .box-break-all{
+            word-break: break-all;
+        }
+
+        .box-word-break{
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="part">
+        <!-- white-space
+        用来控制空白字符的显示，同时还能控制是否自动换行。
+        它的值五个：normal | nowrap | pre | pre-wrap | pre-line
+        -->
+        <div class="box box-nowrap">
+            Hi&nbsp;&nbsp;
+            This is a incomprehensibilities long word
+            </br>
+            你好&nbsp;&nbsp;，
+            这 是一个不可思议的长单词
+        </div>
+        <div class="box box-pre">
+            Hi&nbsp;&nbsp;
+            This is a incomprehensibilities long word
+            </br>
+            你好&nbsp;&nbsp;，
+            这 是一个不可思议的长单词
+            state = {
+                name: '张三',
+                age: 19
+
+            }
+        </div>
+        <div class="box box-pre-wrap">
+            Hi&nbsp;&nbsp;
+            This is a incomprehensibilities long word
+            </br>
+            你好&nbsp;&nbsp;，
+            这 是一个不可思议的长单词
+            state = {
+                name: '张三',
+                age: 19
+
+            }
+        </div>
+        <div class="box box-pre-wrap">
+            Hi&nbsp;&nbsp;
+            This is a incomprehensibilities long word
+            </br>
+            你好&nbsp;&nbsp;，
+            这 是一个不可思议的长单词
+            state = {
+                name: '张三',
+                age: 19
+
+            }
+        </div>
+        <div class="box box-pre-line">
+            Hi&nbsp;&nbsp;
+            This is a incomprehensibilities long word
+            </br>
+            你好&nbsp;&nbsp;，
+            这 是一个不可思议的长单词
+            state = {
+                name: '张三',
+                age: 19
+
+            }
+        </div>
+    </div>
+
+    <div class="part">
+        <!-- word-break
+        控制单词如何被拆分换行。它有三个值：normal | break-all | keep-all
+
+         -->
+        <div class="box box-keep-all">
+            Hi&nbsp;&nbsp;
+            This is a incomprehensibilities long word
+            </br>
+            你好&nbsp;&nbsp;，
+            这 是一个不可思议的长单词
+        </div>
+        <div class="box box-break-all">
+            Hi&nbsp;&nbsp;
+            This is a incomprehensibilities long word
+            </br>
+            你好&nbsp;&nbsp;，
+            这 是一个不可思议的长单词
+        </div>
+    </div>
+    <div class="part">
+        <!-- word-wrap（overflow-wrap）
+        控制单词如何被拆分换行。 实际上是作为 word-break的互补。
+        它的值有两个： normal | break-word
+        -->
+        <div class="box box-word-break">
+            Hi&nbsp;&nbsp;
+            This is a incomprehensibilities long word
+            </br>
+            你好&nbsp;&nbsp;，
+            这 是一个不可思议的长单词
+        </div>
+    </div>
+
+</body>
+
+</html>

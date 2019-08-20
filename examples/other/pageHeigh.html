@@ -1,0 +1,78 @@
+<!--
+ * @Description: IOS 上微信在输入框弹起后，页面不恢复，下方有留白处理
+ * @Author: zhuxy
+ * @Date: 2019-08-20 10:45:59
+ * @LastEditTime: 2019-08-20 11:31:32
+ * @LastEditors: Please set LastEditors
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> IOS 上微信在输入框弹起后，页面不恢复，下方有留白处理</title>
+    <style>
+        html,body{
+            background-color: #f5f5f5;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        input,textarea{
+            display: block;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 问题描述：ios中，键盘的弹起，页面会网上挪动，使输入框在页面中间，键盘隐藏会下挪恢复原状
+        在6.7.4版本中，不回回挪，浙江导致有相对定位（Fixed, absolute 相对于浏览器窗体）的节点发生位移，
+        导致节点的点击事件偏移无法选中
+
+        解决方案：输入框失去焦点（即键盘隐藏时），手动调整页面，
+        document.activeElement.scrollIntoViewIfNeeded(true)
+
+        在每个输入框失去焦点时，响应一下事件即可
+    -->
+    <input placeholder="请输入信息" name="input" type="text">
+    <textarea name="" id="" cols="30" rows="10" placeholder="请输入"></textarea>
+    <script src="//lib.baomitu.com/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        var u = navigator.userAgent,
+            app = navigator.appVersion;
+        var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        $(document).ready(function () {
+            $("input, textarea").blur(function () {
+                if (isIOS) {
+                    blurAdjust()
+                }
+            });
+        });
+        // 解决苹果不回弹页面
+        function blurAdjust(e) {
+            setTimeout(() => {
+                if (document.activeElement.tagName == 'INPUT' || document.activeElement.tagName == 'TEXTAREA') {
+                    return
+                }
+                let result = 'pc';
+                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) { //判断iPhone|iPad|iPod|iOS
+                    result = 'ios'
+                } else if (/(Android)/i.test(navigator.userAgent)) { //判断Android
+                    result = 'android'
+                }
+
+                if (result = 'ios') {
+                    document.activeElement.scrollIntoViewIfNeeded(true);
+                }
+            }, 100)
+        }
+    </script>
+</body>
+
+</html>
