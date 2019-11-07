@@ -2,6 +2,9 @@
 - 胖技术博客 前端学习视频（http://www.jspang.com/）
 - 2019前端提升项目9个练习 (https://juejin.im/post/5dc0c744e51d456e7e41f5ac?utm_source=gold_browser_extension)
 - IOS 上微信在输入框弹起后，页面不恢复，下方有留白处理 (https://blog.csdn.net/m0_37520980/article/details/86305488)
+- 面试汇总资源 https://segmentfault.com/a/1190000020480229
+- IOS 上微信在输入框弹起后，页面不恢复，下方有留白处理 (https://blog.csdn.net/m0_37520980/article/details/86305488 http://blog.shzhaoqi.com/article/187)
+
 - vscode 正则常用表达查询插件：any-rule
 - 前端CDN查询 https://miku.tools/cdnjs/
 - 一个合格的前端都应该阅读这些文章
