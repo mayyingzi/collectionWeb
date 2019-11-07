@@ -1,4 +1,6 @@
 ## collection everyday
+- 胖技术博客 前端学习视频（http://www.jspang.com/）
+- 2019前端提升项目9个练习 (https://juejin.im/post/5dc0c744e51d456e7e41f5ac?utm_source=gold_browser_extension)
 - IOS 上微信在输入框弹起后，页面不恢复，下方有留白处理 (https://blog.csdn.net/m0_37520980/article/details/86305488)
 - vscode 正则常用表达查询插件：any-rule
 - 前端CDN查询 https://miku.tools/cdnjs/
