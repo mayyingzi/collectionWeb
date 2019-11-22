@@ -1,4 +1,5 @@
 ## collection everyday
+- 动画库推荐11个 (https://juejin.im/post/5dd7278cf265da4ea640b398?utm_source=gold_browser_extension)
 - 模拟 自定义接口返回数据 (http://myjson.com/j4jzm)
 - 胖技术博客 前端学习视频（http://www.jspang.com/）
 - 2019前端提升项目9个练习 (https://juejin.im/post/5dc0c744e51d456e7e41f5ac?utm_source=gold_browser_extension)
