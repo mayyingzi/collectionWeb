@@ -1,4 +1,5 @@
 ## collection everyday
+- 一个合格的中级前端工程师应该掌握的 20 个 Vue 技巧 https://juejin.im/post/6872128694639394830
 - 动画库推荐11个 (https://juejin.im/post/5dd7278cf265da4ea640b398?utm_source=gold_browser_extension)
 - 模拟 自定义接口返回数据 (http://myjson.com/j4jzm)
 - 胖技术博客 前端学习视频（http://www.jspang.com/）
