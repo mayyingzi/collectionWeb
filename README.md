@@ -1,4 +1,5 @@
 ## collection everyday
+- 编辑器选型比较 quill (https://juejin.cn/post/6966993945973194765)
 - 电脑上的 node_modules，使用软件包 npkill (https://github.com/voidcosmos/npkill)
 - 一个合格的中级前端工程师应该掌握的 20 个 Vue 技巧 https://juejin.im/post/6872128694639394830
 - 动画库推荐11个 (https://juejin.im/post/5dd7278cf265da4ea640b398?utm_source=gold_browser_extension)
